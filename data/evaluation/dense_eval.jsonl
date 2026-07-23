@@ -1,0 +1,48 @@
+{"id":"eval_001","query":"Theo Bộ luật Tố tụng dân sự 2015, Bộ luật này điều chỉnh những hoạt động tố tụng dân sự nào?","relevant_chunk_ids":["BLTTDS_2015_D1"],"search_law_id":"BLTTDS_2015"}
+{"id":"eval_002","query":"Đương sự phải làm gì với chứng cứ để chứng minh yêu cầu của mình có căn cứ?","relevant_chunk_ids":["BLTTDS_2015_D6_K1"],"search_law_id":null}
+{"id":"eval_003","query":"Theo Bộ luật Tố tụng dân sự 2015, Viện kiểm sát tham gia phiên họp sơ thẩm trong những việc dân sự nào?","relevant_chunk_ids":["BLTTDS_2015_D21_K2"],"search_law_id":"BLTTDS_2015"}
+{"id":"eval_004","query":"Tranh chấp về sa thải và bồi thường khi chấm dứt hợp đồng lao động thuộc thẩm quyền Tòa án theo các điểm nào?","relevant_chunk_ids":["BLTTDS_2015_D32_K1_DA","BLTTDS_2015_D32_K1_DB"],"search_law_id":null}
+{"id":"eval_005","query":"Theo Bộ luật Tố tụng dân sự 2015, nếu không biết nơi cư trú của bị đơn thì nguyên đơn có thể yêu cầu Tòa án nơi nào giải quyết?","relevant_chunk_ids":["BLTTDS_2015_D40_K1_DA"],"search_law_id":"BLTTDS_2015"}
+{"id":"eval_006","query":"Người giám định có quyền đọc tài liệu hồ sơ và đặt câu hỏi về vấn đề giám định không?","relevant_chunk_ids":["BLTTDS_2015_D80_K1_DA","BLTTDS_2015_D80_K1_DB"],"search_law_id":null}
+{"id":"eval_007","query":"Theo Luật Bảo vệ môi trường 2020, Luật này quy định về hoạt động và trách nhiệm bảo vệ môi trường của những chủ thể nào?","relevant_chunk_ids":["LBVMT_2020_D1"],"search_law_id":"LBVMT_2020"}
+{"id":"eval_008","query":"Chất thải rắn và chất thải nguy hại được định nghĩa khác nhau như thế nào?","relevant_chunk_ids":["LBVMT_2020_D3_K19","LBVMT_2020_D3_K20"],"search_law_id":null}
+{"id":"eval_009","query":"Theo Luật Bảo vệ môi trường 2020, xả nước thải hoặc khí thải chưa xử lý đạt chuẩn có bị cấm không?","relevant_chunk_ids":["LBVMT_2020_D6_K2"],"search_law_id":"LBVMT_2020"}
+{"id":"eval_010","query":"Dự án đầu tư hoặc hoạt động xả thải khi chưa đủ điều kiện môi trường có thuộc hành vi bị cấm không?","relevant_chunk_ids":["LBVMT_2020_D6_K5"],"search_law_id":null}
+{"id":"eval_011","query":"Theo Luật Bảo vệ môi trường 2020, Ủy ban nhân dân cấp tỉnh thẩm định báo cáo đánh giá tác động môi trường đối với dự án nào?","relevant_chunk_ids":["LBVMT_2020_D35_K3"],"search_law_id":"LBVMT_2020"}
+{"id":"eval_012","query":"Thời hạn của giấy phép môi trường có thể ngắn hơn theo đề nghị của chủ thể nào?","relevant_chunk_ids":["LBVMT_2020_D40_K4_DD"],"search_law_id":null}
+{"id":"eval_013","query":"Theo Luật Công chứng 2024, Luật này quy định những nội dung nào trong lĩnh vực công chứng?","relevant_chunk_ids":["LCC_2024_D1"],"search_law_id":"LCC_2024"}
+{"id":"eval_014","query":"Văn bản công chứng có hiệu lực kể từ thời điểm nào?","relevant_chunk_ids":["LCC_2024_D6_K1"],"search_law_id":null}
+{"id":"eval_015","query":"Theo Luật Công chứng 2024, công chứng viên có được công chứng giao dịch liên quan đến tài sản của bản thân không?","relevant_chunk_ids":["LCC_2024_D9_K1_DC"],"search_law_id":"LCC_2024"}
+{"id":"eval_016","query":"Hồ sơ yêu cầu công chứng giao dịch đã soạn sẵn được tiếp nhận hoặc từ chối như thế nào?","relevant_chunk_ids":["LCC_2024_D42_K2"],"search_law_id":null}
+{"id":"eval_017","query":"Theo Luật Công chứng 2024, thời hạn công chứng được tính từ khi nào và tối đa bao lâu?","relevant_chunk_ids":["LCC_2024_D45_K1","LCC_2024_D45_K2"],"search_law_id":"LCC_2024"}
+{"id":"eval_018","query":"Công chứng viên có các nghĩa vụ nào về nguyên tắc hành nghề và bảo vệ người yêu cầu công chứng?","relevant_chunk_ids":["LCC_2024_D18_K2_DA","LCC_2024_D18_K2_DB"],"search_law_id":null}
+{"id":"eval_019","query":"Theo Luật Đất đai 2024, Luật này điều chỉnh những vấn đề quản lý và sử dụng đất đai nào?","relevant_chunk_ids":["LDD_2024_D1"],"search_law_id":"LDD_2024"}
+{"id":"eval_020","query":"Người sử dụng đất có quyền được cấp Giấy chứng nhận khi đáp ứng điều kiện nào?","relevant_chunk_ids":["LDD_2024_D26_K1"],"search_law_id":null}
+{"id":"eval_021","query":"Theo Luật Đất đai 2024, lấn đất, chiếm đất và hủy hoại đất có bị nghiêm cấm không?","relevant_chunk_ids":["LDD_2024_D11_K1"],"search_law_id":"LDD_2024"}
+{"id":"eval_022","query":"Chuyển đất nông nghiệp sang đất phi nông nghiệp có thuộc trường hợp chuyển mục đích sử dụng đất phải chú ý không?","relevant_chunk_ids":["LDD_2024_D121_K1_DB"],"search_law_id":null}
+{"id":"eval_023","query":"Theo Luật Đất đai 2024, cơ quan nào cấp Giấy chứng nhận lần đầu cho người sử dụng đất thuộc khoản 3 và khoản 4 Điều 4?","relevant_chunk_ids":["LDD_2024_D136_K1_DB"],"search_law_id":"LDD_2024"}
+{"id":"eval_024","query":"Người sử dụng đất phải sử dụng đất đúng mục đích và thực hiện đăng ký, chuyển nhượng quyền sử dụng đất như thế nào?","relevant_chunk_ids":["LDD_2024_D31_K1","LDD_2024_D31_K2"],"search_law_id":null}
+{"id":"eval_025","query":"Theo Luật Kinh doanh bất động sản 2023, Chính phủ quy định chi tiết về trình tự, thủ tục, hồ sơ chuyển nhượng hợp đồng nào?","relevant_chunk_ids":["LKDBDS_2023_D52"],"search_law_id":"LKDBDS_2023"}
+{"id":"eval_026","query":"Khi cơ quan, tổ chức bán hoặc cho thuê bất động sản là tài sản công thì trường hợp đó có bị loại trừ khỏi phạm vi điều chỉnh không?","relevant_chunk_ids":["LKDBDS_2023_D1_K2_DB"],"search_law_id":null}
+{"id":"eval_027","query":"Theo Luật Kinh doanh bất động sản 2023, sàn giao dịch bất động sản là nơi diễn ra những giao dịch nào?","relevant_chunk_ids":["LKDBDS_2023_D3_K10"],"search_law_id":"LKDBDS_2023"}
+{"id":"eval_028","query":"Môi giới bất động sản được hiểu là việc làm trung gian cho các bên trong những giao dịch nào?","relevant_chunk_ids":["LKDBDS_2023_D3_K11"],"search_law_id":null}
+{"id":"eval_029","query":"Theo Luật Kinh doanh bất động sản 2023, chủ đầu tư có cần được ngân hàng bảo lãnh trước khi bán nhà ở hình thành trong tương lai không?","relevant_chunk_ids":["LKDBDS_2023_D26_K1"],"search_law_id":"LKDBDS_2023"}
+{"id":"eval_030","query":"Trong kinh doanh bất động sản, hợp đồng dịch vụ sàn giao dịch và hợp đồng dịch vụ môi giới là các loại hợp đồng nào?","relevant_chunk_ids":["LKDBDS_2023_D44_K2_DA","LKDBDS_2023_D44_K2_DB"],"search_law_id":null}
+{"id":"eval_031","query":"Theo Luật Nhà ở 2023, giao dịch về nhà ở bao gồm những hình thức nào?","relevant_chunk_ids":["LNO_2023_D159"],"search_law_id":"LNO_2023"}
+{"id":"eval_032","query":"Nhà chung cư có đặc điểm gì về số tầng, căn hộ và phần sở hữu chung riêng?","relevant_chunk_ids":["LNO_2023_D2_K3"],"search_law_id":null}
+{"id":"eval_033","query":"Theo Luật Nhà ở 2023, những nhóm chủ thể nào được sở hữu nhà ở tại Việt Nam?","relevant_chunk_ids":["LNO_2023_D8_K1_DA","LNO_2023_D8_K1_DB","LNO_2023_D8_K1_DC"],"search_law_id":"LNO_2023"}
+{"id":"eval_034","query":"Không đóng kinh phí bảo trì hoặc sử dụng sai quỹ bảo trì phần sở hữu chung nhà chung cư có bị cấm không?","relevant_chunk_ids":["LNO_2023_D3_K8_DA"],"search_law_id":null}
+{"id":"eval_035","query":"Theo Luật Nhà ở 2023, cá nhân có quyền có chỗ ở thông qua những hình thức nào?","relevant_chunk_ids":["LNO_2023_D6_K1"],"search_law_id":"LNO_2023"}
+{"id":"eval_036","query":"Phát triển nhà ở là đầu tư xây mới, xây dựng lại hoặc cải tạo để làm gì?","relevant_chunk_ids":["LNO_2023_D2_K15"],"search_law_id":null}
+{"id":"eval_037","query":"Theo Luật Tương trợ tư pháp về hình sự 2025, Luật này điều chỉnh những nội dung nào giữa Việt Nam với nước ngoài?","relevant_chunk_ids":["LTTPHS_2025_D1"],"search_law_id":"LTTPHS_2025"}
+{"id":"eval_038","query":"Cơ quan trung ương của Việt Nam trong tương trợ tư pháp về hình sự là cơ quan nào?","relevant_chunk_ids":["LTTPHS_2025_D6_K1"],"search_law_id":null}
+{"id":"eval_039","query":"Theo Luật Tương trợ tư pháp về hình sự 2025, hồ sơ yêu cầu của Việt Nam gồm văn bản yêu cầu và tài liệu nào khác?","relevant_chunk_ids":["LTTPHS_2025_D19_K1_DA","LTTPHS_2025_D19_K1_DB"],"search_law_id":"LTTPHS_2025"}
+{"id":"eval_040","query":"Nếu Việt Nam và nước ngoài không cùng điều ước quốc tế thì hồ sơ yêu cầu phải kèm bản dịch sang ngôn ngữ nào?","relevant_chunk_ids":["LTTPHS_2025_D8_K2"],"search_law_id":null}
+{"id":"eval_041","query":"Theo Luật Tương trợ tư pháp về hình sự 2025, Viện kiểm sát nhân dân tối cao kiểm tra tính hợp lệ của hồ sơ yêu cầu trong bao lâu?","relevant_chunk_ids":["LTTPHS_2025_D21_K3"],"search_law_id":"LTTPHS_2025"}
+{"id":"eval_042","query":"Khi triệu tập người làm chứng từ Việt Nam sang nước yêu cầu, văn bản yêu cầu phải gửi trước bao lâu?","relevant_chunk_ids":["LTTPHS_2025_D32_K1"],"search_law_id":null}
+{"id":"eval_043","query":"Theo Luật Xây dựng 2014, Luật này quy định về quyền, nghĩa vụ và quản lý nhà nước trong hoạt động nào?","relevant_chunk_ids":["LXD_2014_D1"],"search_law_id":"LXD_2014"}
+{"id":"eval_044","query":"Chủ đầu tư phải mua bảo hiểm công trình trong thời gian xây dựng đối với loại công trình nào?","relevant_chunk_ids":["LXD_2014_D9_K2_DA"],"search_law_id":null}
+{"id":"eval_045","query":"Theo Luật Xây dựng 2014, khởi công xây dựng công trình khi chưa đủ điều kiện có bị cấm không?","relevant_chunk_ids":["LXD_2014_D12_K2"],"search_law_id":"LXD_2014"}
+{"id":"eval_046","query":"Công trình hoàn thành chỉ được đưa vào khai thác sau khi đáp ứng yêu cầu nghiệm thu nào?","relevant_chunk_ids":["LXD_2014_D123_K2"],"search_law_id":null}
+{"id":"eval_047","query":"Theo Luật Xây dựng 2014, nghiệm thu công trình xây dựng bao gồm nghiệm thu công việc và nghiệm thu hoàn thành gì?","relevant_chunk_ids":["LXD_2014_D123_K1_DA","LXD_2014_D123_K1_DB"],"search_law_id":"LXD_2014"}
+{"id":"eval_048","query":"Khi bàn giao công trình, nhà thầu thi công phải giao những tài liệu vận hành và bảo trì nào cho chủ đầu tư?","relevant_chunk_ids":["LXD_2014_D124_K3"],"search_law_id":null}
