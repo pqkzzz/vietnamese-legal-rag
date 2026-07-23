@@ -1,0 +1,3 @@
+# Local embedding models
+models/*
+!models/.gitkeep
