@@ -1,4 +1,4 @@
-"""Create and configure Qdrant collections for legal retrieval."""
+﻿"""Create and configure Qdrant collections for legal retrieval."""
 
 from __future__ import annotations
 
@@ -35,24 +35,80 @@ def create_legal_collection(
 ) -> None:
     """Create the legal vector collection and payload indexes."""
 
+    if vector_size <= 0:
+        raise ValueError("vector_size must be greater than 0.")
+
+    cleaned_collection_name = collection_name.strip()
+    if not cleaned_collection_name:
+        raise ValueError("collection_name must not be empty.")
+
     exists = client.collection_exists(
-        collection_name=collection_name,
+        collection_name=cleaned_collection_name,
     )
 
     if exists and recreate:
         client.delete_collection(
-            collection_name=collection_name,
+            collection_name=cleaned_collection_name,
         )
         exists = False
 
     if not exists:
         client.create_collection(
-            collection_name=collection_name,
+            collection_name=cleaned_collection_name,
             vectors_config=models.VectorParams(
                 size=vector_size,
                 distance=models.Distance.COSINE,
             ),
         )
+
+    _create_payload_indexes(client, cleaned_collection_name)
+
+def create_sparse_legal_collection(
+    client: QdrantClient,
+    *,
+    collection_name: str,
+    sparse_vector_name: str = "bm25",
+    recreate: bool = False,
+) -> None:
+    """Create a sparse-only Qdrant collection for BM25 retrieval."""
+
+    cleaned_collection_name = collection_name.strip()
+    cleaned_vector_name = sparse_vector_name.strip()
+
+    if not cleaned_collection_name:
+        raise ValueError("collection_name must not be empty.")
+    if not cleaned_vector_name:
+        raise ValueError("sparse_vector_name must not be empty.")
+
+    exists = client.collection_exists(
+        collection_name=cleaned_collection_name,
+    )
+
+    if exists and recreate:
+        client.delete_collection(
+            collection_name=cleaned_collection_name,
+        )
+        exists = False
+
+    if not exists:
+        client.create_collection(
+            collection_name=cleaned_collection_name,
+            vectors_config={},
+            sparse_vectors_config={
+                cleaned_vector_name: models.SparseVectorParams(
+                    modifier=models.Modifier.IDF,
+                )
+            },
+        )
+
+    _create_payload_indexes(client, cleaned_collection_name)
+
+
+def _create_payload_indexes(
+    client: QdrantClient,
+    collection_name: str,
+) -> None:
+    """Create configured payload indexes for a Qdrant collection."""
 
     for field_name, field_schema in PAYLOAD_INDEXES.items():
         client.create_payload_index(
