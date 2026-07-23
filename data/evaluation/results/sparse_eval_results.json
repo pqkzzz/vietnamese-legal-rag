@@ -1,0 +1,6039 @@
+{
+  "pipeline": "sparse_bm25",
+  "model": "Qdrant/bm25",
+  "collection": "legal_units_bm25",
+  "sparse_vector_name": "bm25",
+  "dataset": "D:\\ProjectAI\\vietnamese-legal-rag\\data\\evaluation\\dense_eval.jsonl",
+  "case_count": 48,
+  "ks": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "summary": {
+    "hit@1": 0.6458333333333334,
+    "hit@3": 0.7708333333333334,
+    "hit@5": 0.8958333333333334,
+    "hit@10": 0.9166666666666666,
+    "recall@1": 0.5833333333333334,
+    "recall@3": 0.7291666666666666,
+    "recall@5": 0.8541666666666666,
+    "recall@10": 0.8958333333333334,
+    "mrr@10": 0.725545634920635,
+    "latency_seconds": 0.016146118752052036
+  },
+  "per_query": [
+    {
+      "id": "eval_001",
+      "query": "Theo Bộ luật Tố tụng dân sự 2015, Bộ luật này điều chỉnh những hoạt động tố tụng dân sự nào?",
+      "search_law_id": "BLTTDS_2015",
+      "relevant_chunk_ids": [
+        "BLTTDS_2015_D1"
+      ],
+      "retrieved_chunk_ids": [
+        "BLTTDS_2015_D25",
+        "BLTTDS_2015_D45_K2",
+        "BLTTDS_2015_D496",
+        "BLTTDS_2015_D26_K10",
+        "BLTTDS_2015_D69_K6",
+        "BLTTDS_2015_D49_K4",
+        "BLTTDS_2015_D414_K5",
+        "BLTTDS_2015_D3",
+        "BLTTDS_2015_D414_K6",
+        "BLTTDS_2015_D414_K3"
+      ],
+      "first_relevant_rank": null,
+      "latency_seconds": 0.03141279998817481,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 0.0,
+        "recall@3": 0.0,
+        "hit@5": 0.0,
+        "recall@5": 0.0,
+        "hit@10": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "BLTTDS_2015_D25",
+          "score": 28.706604,
+          "law_id": "BLTTDS_2015",
+          "article_number": "25",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "BLTTDS_2015_D45_K2",
+          "score": 25.44503,
+          "law_id": "BLTTDS_2015",
+          "article_number": "45",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "BLTTDS_2015_D496",
+          "score": 23.813093,
+          "law_id": "BLTTDS_2015",
+          "article_number": "496",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "BLTTDS_2015_D26_K10",
+          "score": 23.536362,
+          "law_id": "BLTTDS_2015",
+          "article_number": "26",
+          "clause_number": "10",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "BLTTDS_2015_D69_K6",
+          "score": 23.152058,
+          "law_id": "BLTTDS_2015",
+          "article_number": "69",
+          "clause_number": "6",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "BLTTDS_2015_D49_K4",
+          "score": 22.699093,
+          "law_id": "BLTTDS_2015",
+          "article_number": "49",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "BLTTDS_2015_D414_K5",
+          "score": 22.63102,
+          "law_id": "BLTTDS_2015",
+          "article_number": "414",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "BLTTDS_2015_D3",
+          "score": 22.597729,
+          "law_id": "BLTTDS_2015",
+          "article_number": "3",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "BLTTDS_2015_D414_K6",
+          "score": 22.580757,
+          "law_id": "BLTTDS_2015",
+          "article_number": "414",
+          "clause_number": "6",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "BLTTDS_2015_D414_K3",
+          "score": 22.580755,
+          "law_id": "BLTTDS_2015",
+          "article_number": "414",
+          "clause_number": "3",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_002",
+      "query": "Đương sự phải làm gì với chứng cứ để chứng minh yêu cầu của mình có căn cứ?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "BLTTDS_2015_D6_K1"
+      ],
+      "retrieved_chunk_ids": [
+        "BLTTDS_2015_D248_K1_DA",
+        "BLTTDS_2015_D93",
+        "BLTTDS_2015_D91_K1_DC",
+        "BLTTDS_2015_D6_K1",
+        "BLTTDS_2015_D91_K1_DA",
+        "BLTTDS_2015_D248_K1_DB",
+        "BLTTDS_2015_D248_K2",
+        "BLTTDS_2015_D106_K2",
+        "BLTTDS_2015_D91_K1_DB",
+        "BLTTDS_2015_D248_K1_DC"
+      ],
+      "first_relevant_rank": 4,
+      "latency_seconds": 0.019192999985534698,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 0.0,
+        "recall@3": 0.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.25
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "BLTTDS_2015_D248_K1_DA",
+          "score": 41.080544,
+          "law_id": "BLTTDS_2015",
+          "article_number": "248",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "BLTTDS_2015_D93",
+          "score": 40.868706,
+          "law_id": "BLTTDS_2015",
+          "article_number": "93",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "BLTTDS_2015_D91_K1_DC",
+          "score": 39.631386,
+          "law_id": "BLTTDS_2015",
+          "article_number": "91",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "BLTTDS_2015_D6_K1",
+          "score": 39.298832,
+          "law_id": "BLTTDS_2015",
+          "article_number": "6",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "BLTTDS_2015_D91_K1_DA",
+          "score": 38.81404,
+          "law_id": "BLTTDS_2015",
+          "article_number": "91",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "BLTTDS_2015_D248_K1_DB",
+          "score": 38.175507,
+          "law_id": "BLTTDS_2015",
+          "article_number": "248",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "BLTTDS_2015_D248_K2",
+          "score": 37.68728,
+          "law_id": "BLTTDS_2015",
+          "article_number": "248",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "BLTTDS_2015_D106_K2",
+          "score": 37.271454,
+          "law_id": "BLTTDS_2015",
+          "article_number": "106",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "BLTTDS_2015_D91_K1_DB",
+          "score": 37.258278,
+          "law_id": "BLTTDS_2015",
+          "article_number": "91",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "BLTTDS_2015_D248_K1_DC",
+          "score": 37.027565,
+          "law_id": "BLTTDS_2015",
+          "article_number": "248",
+          "clause_number": "1",
+          "point_number": "c"
+        }
+      ]
+    },
+    {
+      "id": "eval_003",
+      "query": "Theo Bộ luật Tố tụng dân sự 2015, Viện kiểm sát tham gia phiên họp sơ thẩm trong những việc dân sự nào?",
+      "search_law_id": "BLTTDS_2015",
+      "relevant_chunk_ids": [
+        "BLTTDS_2015_D21_K2"
+      ],
+      "retrieved_chunk_ids": [
+        "BLTTDS_2015_D374_K1",
+        "BLTTDS_2015_D21_K2",
+        "BLTTDS_2015_D367_K1",
+        "BLTTDS_2015_D21_K3",
+        "BLTTDS_2015_D314_K2",
+        "BLTTDS_2015_D57_K1_DB",
+        "BLTTDS_2015_D359_K5",
+        "BLTTDS_2015_D373_K3",
+        "BLTTDS_2015_D407_K2",
+        "BLTTDS_2015_D294_K2"
+      ],
+      "first_relevant_rank": 2,
+      "latency_seconds": 0.011454599996795878,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "BLTTDS_2015_D374_K1",
+          "score": 58.14055,
+          "law_id": "BLTTDS_2015",
+          "article_number": "374",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "BLTTDS_2015_D21_K2",
+          "score": 55.6545,
+          "law_id": "BLTTDS_2015",
+          "article_number": "21",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "BLTTDS_2015_D367_K1",
+          "score": 54.81512,
+          "law_id": "BLTTDS_2015",
+          "article_number": "367",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "BLTTDS_2015_D21_K3",
+          "score": 53.796528,
+          "law_id": "BLTTDS_2015",
+          "article_number": "21",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "BLTTDS_2015_D314_K2",
+          "score": 51.76129,
+          "law_id": "BLTTDS_2015",
+          "article_number": "314",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "BLTTDS_2015_D57_K1_DB",
+          "score": 51.037132,
+          "law_id": "BLTTDS_2015",
+          "article_number": "57",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "BLTTDS_2015_D359_K5",
+          "score": 50.67352,
+          "law_id": "BLTTDS_2015",
+          "article_number": "359",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "BLTTDS_2015_D373_K3",
+          "score": 49.686806,
+          "law_id": "BLTTDS_2015",
+          "article_number": "373",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "BLTTDS_2015_D407_K2",
+          "score": 49.25575,
+          "law_id": "BLTTDS_2015",
+          "article_number": "407",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "BLTTDS_2015_D294_K2",
+          "score": 48.227444,
+          "law_id": "BLTTDS_2015",
+          "article_number": "294",
+          "clause_number": "2",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_004",
+      "query": "Tranh chấp về sa thải và bồi thường khi chấm dứt hợp đồng lao động thuộc thẩm quyền Tòa án theo các điểm nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "BLTTDS_2015_D32_K1_DA",
+        "BLTTDS_2015_D32_K1_DB"
+      ],
+      "retrieved_chunk_ids": [
+        "BLTTDS_2015_D32_K1_DA",
+        "BLTTDS_2015_D32_K1_DB",
+        "BLTTDS_2015_D119",
+        "BLTTDS_2015_D40_K1_DDD",
+        "BLTTDS_2015_D32_K1_DDD",
+        "BLTTDS_2015_D32_K4",
+        "BLTTDS_2015_D40_K1_DD",
+        "BLTTDS_2015_D114_K5",
+        "BLTTDS_2015_D91_K1_DB",
+        "BLTTDS_2015_D32_K5"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.008866999996826053,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 0.5,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "BLTTDS_2015_D32_K1_DA",
+          "score": 61.103477,
+          "law_id": "BLTTDS_2015",
+          "article_number": "32",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "BLTTDS_2015_D32_K1_DB",
+          "score": 57.980602,
+          "law_id": "BLTTDS_2015",
+          "article_number": "32",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "BLTTDS_2015_D119",
+          "score": 56.63458,
+          "law_id": "BLTTDS_2015",
+          "article_number": "119",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "BLTTDS_2015_D40_K1_DDD",
+          "score": 56.197308,
+          "law_id": "BLTTDS_2015",
+          "article_number": "40",
+          "clause_number": "1",
+          "point_number": "đ"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "BLTTDS_2015_D32_K1_DDD",
+          "score": 46.156013,
+          "law_id": "BLTTDS_2015",
+          "article_number": "32",
+          "clause_number": "1",
+          "point_number": "đ"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "BLTTDS_2015_D32_K4",
+          "score": 44.014996,
+          "law_id": "BLTTDS_2015",
+          "article_number": "32",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "BLTTDS_2015_D40_K1_DD",
+          "score": 42.562164,
+          "law_id": "BLTTDS_2015",
+          "article_number": "40",
+          "clause_number": "1",
+          "point_number": "d"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "BLTTDS_2015_D114_K5",
+          "score": 41.591064,
+          "law_id": "BLTTDS_2015",
+          "article_number": "114",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "BLTTDS_2015_D91_K1_DB",
+          "score": 40.73809,
+          "law_id": "BLTTDS_2015",
+          "article_number": "91",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "BLTTDS_2015_D32_K5",
+          "score": 39.25362,
+          "law_id": "BLTTDS_2015",
+          "article_number": "32",
+          "clause_number": "5",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_005",
+      "query": "Theo Bộ luật Tố tụng dân sự 2015, nếu không biết nơi cư trú của bị đơn thì nguyên đơn có thể yêu cầu Tòa án nơi nào giải quyết?",
+      "search_law_id": "BLTTDS_2015",
+      "relevant_chunk_ids": [
+        "BLTTDS_2015_D40_K1_DA"
+      ],
+      "retrieved_chunk_ids": [
+        "BLTTDS_2015_D40_K1_DA",
+        "BLTTDS_2015_D40_K1_DC",
+        "BLTTDS_2015_D40_K1_DH",
+        "BLTTDS_2015_D40_K1_DD",
+        "BLTTDS_2015_D40_K1_DE",
+        "BLTTDS_2015_D40_K2_DA",
+        "BLTTDS_2015_D477_K6_DB",
+        "BLTTDS_2015_D40_K1_DDD",
+        "BLTTDS_2015_D40_K2_DC",
+        "BLTTDS_2015_D40_K2_DB"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.011729199992259964,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "BLTTDS_2015_D40_K1_DA",
+          "score": 76.07905,
+          "law_id": "BLTTDS_2015",
+          "article_number": "40",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "BLTTDS_2015_D40_K1_DC",
+          "score": 67.999344,
+          "law_id": "BLTTDS_2015",
+          "article_number": "40",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "BLTTDS_2015_D40_K1_DH",
+          "score": 67.159935,
+          "law_id": "BLTTDS_2015",
+          "article_number": "40",
+          "clause_number": "1",
+          "point_number": "h"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "BLTTDS_2015_D40_K1_DD",
+          "score": 61.320488,
+          "law_id": "BLTTDS_2015",
+          "article_number": "40",
+          "clause_number": "1",
+          "point_number": "d"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "BLTTDS_2015_D40_K1_DE",
+          "score": 61.267105,
+          "law_id": "BLTTDS_2015",
+          "article_number": "40",
+          "clause_number": "1",
+          "point_number": "e"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "BLTTDS_2015_D40_K2_DA",
+          "score": 59.013985,
+          "law_id": "BLTTDS_2015",
+          "article_number": "40",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "BLTTDS_2015_D477_K6_DB",
+          "score": 57.765125,
+          "law_id": "BLTTDS_2015",
+          "article_number": "477",
+          "clause_number": "6",
+          "point_number": "b"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "BLTTDS_2015_D40_K1_DDD",
+          "score": 56.87554,
+          "law_id": "BLTTDS_2015",
+          "article_number": "40",
+          "clause_number": "1",
+          "point_number": "đ"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "BLTTDS_2015_D40_K2_DC",
+          "score": 55.785927,
+          "law_id": "BLTTDS_2015",
+          "article_number": "40",
+          "clause_number": "2",
+          "point_number": "c"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "BLTTDS_2015_D40_K2_DB",
+          "score": 55.589237,
+          "law_id": "BLTTDS_2015",
+          "article_number": "40",
+          "clause_number": "2",
+          "point_number": "b"
+        }
+      ]
+    },
+    {
+      "id": "eval_006",
+      "query": "Người giám định có quyền đọc tài liệu hồ sơ và đặt câu hỏi về vấn đề giám định không?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "BLTTDS_2015_D80_K1_DA",
+        "BLTTDS_2015_D80_K1_DB"
+      ],
+      "retrieved_chunk_ids": [
+        "BLTTDS_2015_D80_K1_DB",
+        "BLTTDS_2015_D80_K1_DA",
+        "BLTTDS_2015_D70_K19",
+        "BLTTDS_2015_D210_K2_DC",
+        "BLTTDS_2015_D210_K2_DD",
+        "BLTTDS_2015_D210_K2_DB",
+        "BLTTDS_2015_D210_K2_DA",
+        "BLTTDS_2015_D249_K2",
+        "BLTTDS_2015_D257_K2",
+        "BLTTDS_2015_D257_K1"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.009568499983288348,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 0.5,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "BLTTDS_2015_D80_K1_DB",
+          "score": 47.730972,
+          "law_id": "BLTTDS_2015",
+          "article_number": "80",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "BLTTDS_2015_D80_K1_DA",
+          "score": 36.66957,
+          "law_id": "BLTTDS_2015",
+          "article_number": "80",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "BLTTDS_2015_D70_K19",
+          "score": 35.733234,
+          "law_id": "BLTTDS_2015",
+          "article_number": "70",
+          "clause_number": "19",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "BLTTDS_2015_D210_K2_DC",
+          "score": 34.78062,
+          "law_id": "BLTTDS_2015",
+          "article_number": "210",
+          "clause_number": "2",
+          "point_number": "c"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "BLTTDS_2015_D210_K2_DD",
+          "score": 33.93851,
+          "law_id": "BLTTDS_2015",
+          "article_number": "210",
+          "clause_number": "2",
+          "point_number": "d"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "BLTTDS_2015_D210_K2_DB",
+          "score": 33.438866,
+          "law_id": "BLTTDS_2015",
+          "article_number": "210",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "BLTTDS_2015_D210_K2_DA",
+          "score": 32.990402,
+          "law_id": "BLTTDS_2015",
+          "article_number": "210",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "BLTTDS_2015_D249_K2",
+          "score": 32.63841,
+          "law_id": "BLTTDS_2015",
+          "article_number": "249",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "BLTTDS_2015_D257_K2",
+          "score": 30.453085,
+          "law_id": "BLTTDS_2015",
+          "article_number": "257",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "BLTTDS_2015_D257_K1",
+          "score": 29.628084,
+          "law_id": "BLTTDS_2015",
+          "article_number": "257",
+          "clause_number": "1",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_007",
+      "query": "Theo Luật Bảo vệ môi trường 2020, Luật này quy định về hoạt động và trách nhiệm bảo vệ môi trường của những chủ thể nào?",
+      "search_law_id": "LBVMT_2020",
+      "relevant_chunk_ids": [
+        "LBVMT_2020_D1"
+      ],
+      "retrieved_chunk_ids": [
+        "LBVMT_2020_D121_K4",
+        "LBVMT_2020_D66_K3_DB",
+        "LBVMT_2020_D49_K5",
+        "LBVMT_2020_D66_K3_DA",
+        "LBVMT_2020_D1",
+        "LBVMT_2020_D52_K3_DG",
+        "LBVMT_2020_D148_K4_DDD",
+        "LBVMT_2020_D167_K2",
+        "LBVMT_2020_D96_K1_DC",
+        "LBVMT_2020_D119_K1"
+      ],
+      "first_relevant_rank": 5,
+      "latency_seconds": 0.00949280001805164,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 0.0,
+        "recall@3": 0.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.2
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LBVMT_2020_D121_K4",
+          "score": 32.398846,
+          "law_id": "LBVMT_2020",
+          "article_number": "121",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LBVMT_2020_D66_K3_DB",
+          "score": 31.876083,
+          "law_id": "LBVMT_2020",
+          "article_number": "66",
+          "clause_number": "3",
+          "point_number": "b"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LBVMT_2020_D49_K5",
+          "score": 31.697481,
+          "law_id": "LBVMT_2020",
+          "article_number": "49",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LBVMT_2020_D66_K3_DA",
+          "score": 30.699455,
+          "law_id": "LBVMT_2020",
+          "article_number": "66",
+          "clause_number": "3",
+          "point_number": "a"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LBVMT_2020_D1",
+          "score": 30.624996,
+          "law_id": "LBVMT_2020",
+          "article_number": "1",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LBVMT_2020_D52_K3_DG",
+          "score": 30.309994,
+          "law_id": "LBVMT_2020",
+          "article_number": "52",
+          "clause_number": "3",
+          "point_number": "g"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LBVMT_2020_D148_K4_DDD",
+          "score": 30.247908,
+          "law_id": "LBVMT_2020",
+          "article_number": "148",
+          "clause_number": "4",
+          "point_number": "đ"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LBVMT_2020_D167_K2",
+          "score": 30.226006,
+          "law_id": "LBVMT_2020",
+          "article_number": "167",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LBVMT_2020_D96_K1_DC",
+          "score": 30.07484,
+          "law_id": "LBVMT_2020",
+          "article_number": "96",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LBVMT_2020_D119_K1",
+          "score": 29.228134,
+          "law_id": "LBVMT_2020",
+          "article_number": "119",
+          "clause_number": "1",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_008",
+      "query": "Chất thải rắn và chất thải nguy hại được định nghĩa khác nhau như thế nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LBVMT_2020_D3_K19",
+        "LBVMT_2020_D3_K20"
+      ],
+      "retrieved_chunk_ids": [
+        "LBVMT_2020_D72_K1_DDD",
+        "LBVMT_2020_D72_K1_DB",
+        "LBVMT_2020_D72_K1_DC",
+        "LBVMT_2020_D72_K1_DE",
+        "LBVMT_2020_D72_K1_DD",
+        "LBVMT_2020_D72_K1_DA",
+        "LBVMT_2020_D81_K3",
+        "LBVMT_2020_D72_K6",
+        "LBVMT_2020_D114_K1_DB",
+        "LBVMT_2020_D82_K3_DB"
+      ],
+      "first_relevant_rank": null,
+      "latency_seconds": 0.010345799993956462,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 0.0,
+        "recall@3": 0.0,
+        "hit@5": 0.0,
+        "recall@5": 0.0,
+        "hit@10": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LBVMT_2020_D72_K1_DDD",
+          "score": 37.910255,
+          "law_id": "LBVMT_2020",
+          "article_number": "72",
+          "clause_number": "1",
+          "point_number": "đ"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LBVMT_2020_D72_K1_DB",
+          "score": 36.032856,
+          "law_id": "LBVMT_2020",
+          "article_number": "72",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LBVMT_2020_D72_K1_DC",
+          "score": 35.719604,
+          "law_id": "LBVMT_2020",
+          "article_number": "72",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LBVMT_2020_D72_K1_DE",
+          "score": 34.196472,
+          "law_id": "LBVMT_2020",
+          "article_number": "72",
+          "clause_number": "1",
+          "point_number": "e"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LBVMT_2020_D72_K1_DD",
+          "score": 33.64773,
+          "law_id": "LBVMT_2020",
+          "article_number": "72",
+          "clause_number": "1",
+          "point_number": "d"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LBVMT_2020_D72_K1_DA",
+          "score": 33.40245,
+          "law_id": "LBVMT_2020",
+          "article_number": "72",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LBVMT_2020_D81_K3",
+          "score": 32.15591,
+          "law_id": "LBVMT_2020",
+          "article_number": "81",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LBVMT_2020_D72_K6",
+          "score": 31.951689,
+          "law_id": "LBVMT_2020",
+          "article_number": "72",
+          "clause_number": "6",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LBVMT_2020_D114_K1_DB",
+          "score": 31.569567,
+          "law_id": "LBVMT_2020",
+          "article_number": "114",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LBVMT_2020_D82_K3_DB",
+          "score": 31.072475,
+          "law_id": "LBVMT_2020",
+          "article_number": "82",
+          "clause_number": "3",
+          "point_number": "b"
+        }
+      ]
+    },
+    {
+      "id": "eval_009",
+      "query": "Theo Luật Bảo vệ môi trường 2020, xả nước thải hoặc khí thải chưa xử lý đạt chuẩn có bị cấm không?",
+      "search_law_id": "LBVMT_2020",
+      "relevant_chunk_ids": [
+        "LBVMT_2020_D6_K2"
+      ],
+      "retrieved_chunk_ids": [
+        "LBVMT_2020_D6_K2",
+        "LBVMT_2020_D6_K4",
+        "LBVMT_2020_D7_K2",
+        "LBVMT_2020_D72_K2_DA",
+        "LBVMT_2020_D6_K5",
+        "LBVMT_2020_D171_K5",
+        "LBVMT_2020_D39_K1",
+        "LBVMT_2020_D42_K2_DD",
+        "LBVMT_2020_D40_K3_DA",
+        "LBVMT_2020_D112_K5_DA"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.030709700018633157,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LBVMT_2020_D6_K2",
+          "score": 64.44097,
+          "law_id": "LBVMT_2020",
+          "article_number": "6",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LBVMT_2020_D6_K4",
+          "score": 47.883335,
+          "law_id": "LBVMT_2020",
+          "article_number": "6",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LBVMT_2020_D7_K2",
+          "score": 47.81863,
+          "law_id": "LBVMT_2020",
+          "article_number": "7",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LBVMT_2020_D72_K2_DA",
+          "score": 42.531918,
+          "law_id": "LBVMT_2020",
+          "article_number": "72",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LBVMT_2020_D6_K5",
+          "score": 41.26636,
+          "law_id": "LBVMT_2020",
+          "article_number": "6",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LBVMT_2020_D171_K5",
+          "score": 40.910885,
+          "law_id": "LBVMT_2020",
+          "article_number": "171",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LBVMT_2020_D39_K1",
+          "score": 39.859425,
+          "law_id": "LBVMT_2020",
+          "article_number": "39",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LBVMT_2020_D42_K2_DD",
+          "score": 39.519203,
+          "law_id": "LBVMT_2020",
+          "article_number": "42",
+          "clause_number": "2",
+          "point_number": "d"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LBVMT_2020_D40_K3_DA",
+          "score": 37.528645,
+          "law_id": "LBVMT_2020",
+          "article_number": "40",
+          "clause_number": "3",
+          "point_number": "a"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LBVMT_2020_D112_K5_DA",
+          "score": 37.145428,
+          "law_id": "LBVMT_2020",
+          "article_number": "112",
+          "clause_number": "5",
+          "point_number": "a"
+        }
+      ]
+    },
+    {
+      "id": "eval_010",
+      "query": "Dự án đầu tư hoặc hoạt động xả thải khi chưa đủ điều kiện môi trường có thuộc hành vi bị cấm không?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LBVMT_2020_D6_K5"
+      ],
+      "retrieved_chunk_ids": [
+        "LBVMT_2020_D6_K5",
+        "LBVMT_2020_D6_K2",
+        "LBVMT_2020_D7_K2",
+        "LBVMT_2020_D6_K4",
+        "LBVMT_2020_D37_K4_DB",
+        "LXD_2014_D12_K7",
+        "LKDBDS_2023_D40_K1_DDD",
+        "LXD_2014_D12_K6",
+        "LBVMT_2020_D6_K3",
+        "LBVMT_2020_D49_K6_DB"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.015184400021098554,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LBVMT_2020_D6_K5",
+          "score": 61.71755,
+          "law_id": "LBVMT_2020",
+          "article_number": "6",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LBVMT_2020_D6_K2",
+          "score": 44.14411,
+          "law_id": "LBVMT_2020",
+          "article_number": "6",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LBVMT_2020_D7_K2",
+          "score": 40.293964,
+          "law_id": "LBVMT_2020",
+          "article_number": "7",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LBVMT_2020_D6_K4",
+          "score": 39.45074,
+          "law_id": "LBVMT_2020",
+          "article_number": "6",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LBVMT_2020_D37_K4_DB",
+          "score": 39.107544,
+          "law_id": "LBVMT_2020",
+          "article_number": "37",
+          "clause_number": "4",
+          "point_number": "b"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LXD_2014_D12_K7",
+          "score": 35.676147,
+          "law_id": "LXD_2014",
+          "article_number": "12",
+          "clause_number": "7",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LKDBDS_2023_D40_K1_DDD",
+          "score": 35.610462,
+          "law_id": "LKDBDS_2023",
+          "article_number": "40",
+          "clause_number": "1",
+          "point_number": "đ"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LXD_2014_D12_K6",
+          "score": 34.880524,
+          "law_id": "LXD_2014",
+          "article_number": "12",
+          "clause_number": "6",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LBVMT_2020_D6_K3",
+          "score": 34.3956,
+          "law_id": "LBVMT_2020",
+          "article_number": "6",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LBVMT_2020_D49_K6_DB",
+          "score": 34.300842,
+          "law_id": "LBVMT_2020",
+          "article_number": "49",
+          "clause_number": "6",
+          "point_number": "b"
+        }
+      ]
+    },
+    {
+      "id": "eval_011",
+      "query": "Theo Luật Bảo vệ môi trường 2020, Ủy ban nhân dân cấp tỉnh thẩm định báo cáo đánh giá tác động môi trường đối với dự án nào?",
+      "search_law_id": "LBVMT_2020",
+      "relevant_chunk_ids": [
+        "LBVMT_2020_D35_K3"
+      ],
+      "retrieved_chunk_ids": [
+        "LBVMT_2020_D35_K3",
+        "LBVMT_2020_D36_K2_DB",
+        "LBVMT_2020_D36_K2_DA",
+        "LBVMT_2020_D35_K1_DB",
+        "LBVMT_2020_D41_K3_DC",
+        "LBVMT_2020_D168_K1_DB",
+        "LBVMT_2020_D36_K3",
+        "LBVMT_2020_D171_K2",
+        "LBVMT_2020_D34_K2",
+        "LBVMT_2020_D118_K5"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.009887399995932356,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LBVMT_2020_D35_K3",
+          "score": 65.90062,
+          "law_id": "LBVMT_2020",
+          "article_number": "35",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LBVMT_2020_D36_K2_DB",
+          "score": 63.04124,
+          "law_id": "LBVMT_2020",
+          "article_number": "36",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LBVMT_2020_D36_K2_DA",
+          "score": 62.798294,
+          "law_id": "LBVMT_2020",
+          "article_number": "36",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LBVMT_2020_D35_K1_DB",
+          "score": 55.73851,
+          "law_id": "LBVMT_2020",
+          "article_number": "35",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LBVMT_2020_D41_K3_DC",
+          "score": 55.2074,
+          "law_id": "LBVMT_2020",
+          "article_number": "41",
+          "clause_number": "3",
+          "point_number": "c"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LBVMT_2020_D168_K1_DB",
+          "score": 53.113174,
+          "law_id": "LBVMT_2020",
+          "article_number": "168",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LBVMT_2020_D36_K3",
+          "score": 51.23589,
+          "law_id": "LBVMT_2020",
+          "article_number": "36",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LBVMT_2020_D171_K2",
+          "score": 50.054493,
+          "law_id": "LBVMT_2020",
+          "article_number": "171",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LBVMT_2020_D34_K2",
+          "score": 48.81286,
+          "law_id": "LBVMT_2020",
+          "article_number": "34",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LBVMT_2020_D118_K5",
+          "score": 48.486397,
+          "law_id": "LBVMT_2020",
+          "article_number": "118",
+          "clause_number": "5",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_012",
+      "query": "Thời hạn của giấy phép môi trường có thể ngắn hơn theo đề nghị của chủ thể nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LBVMT_2020_D40_K4_DD"
+      ],
+      "retrieved_chunk_ids": [
+        "LBVMT_2020_D40_K4_DD",
+        "LBVMT_2020_D43_K4_DC",
+        "LBVMT_2020_D44_K2_DA",
+        "LXD_2014_D99_K1",
+        "LXD_2014_D102_K4",
+        "LBVMT_2020_D171_K5",
+        "LXD_2014_D99_K3",
+        "LBVMT_2020_D43_K3",
+        "LBVMT_2020_D47_K1_DB",
+        "LXD_2014_D94_K1_DC"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.028102500014938414,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LBVMT_2020_D40_K4_DD",
+          "score": 52.54361,
+          "law_id": "LBVMT_2020",
+          "article_number": "40",
+          "clause_number": "4",
+          "point_number": "d"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LBVMT_2020_D43_K4_DC",
+          "score": 41.10845,
+          "law_id": "LBVMT_2020",
+          "article_number": "43",
+          "clause_number": "4",
+          "point_number": "c"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LBVMT_2020_D44_K2_DA",
+          "score": 30.477865,
+          "law_id": "LBVMT_2020",
+          "article_number": "44",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LXD_2014_D99_K1",
+          "score": 28.995588,
+          "law_id": "LXD_2014",
+          "article_number": "99",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LXD_2014_D102_K4",
+          "score": 28.916681,
+          "law_id": "LXD_2014",
+          "article_number": "102",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LBVMT_2020_D171_K5",
+          "score": 28.329327,
+          "law_id": "LBVMT_2020",
+          "article_number": "171",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LXD_2014_D99_K3",
+          "score": 27.485798,
+          "law_id": "LXD_2014",
+          "article_number": "99",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LBVMT_2020_D43_K3",
+          "score": 26.545946,
+          "law_id": "LBVMT_2020",
+          "article_number": "43",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LBVMT_2020_D47_K1_DB",
+          "score": 26.268923,
+          "law_id": "LBVMT_2020",
+          "article_number": "47",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LXD_2014_D94_K1_DC",
+          "score": 26.154034,
+          "law_id": "LXD_2014",
+          "article_number": "94",
+          "clause_number": "1",
+          "point_number": "c"
+        }
+      ]
+    },
+    {
+      "id": "eval_013",
+      "query": "Theo Luật Công chứng 2024, Luật này quy định những nội dung nào trong lĩnh vực công chứng?",
+      "search_law_id": "LCC_2024",
+      "relevant_chunk_ids": [
+        "LCC_2024_D1"
+      ],
+      "retrieved_chunk_ids": [
+        "LCC_2024_D48_K3",
+        "LCC_2024_D11_K3_DD",
+        "LCC_2024_D11_K3_DA",
+        "LCC_2024_D26_K1",
+        "LCC_2024_D33_K1_DA",
+        "LCC_2024_D52_K3",
+        "LCC_2024_D59_K2_DB",
+        "LCC_2024_D60_K2_DB",
+        "LCC_2024_D43_K1",
+        "LCC_2024_D45_K2"
+      ],
+      "first_relevant_rank": null,
+      "latency_seconds": 0.015308500005630776,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 0.0,
+        "recall@3": 0.0,
+        "hit@5": 0.0,
+        "recall@5": 0.0,
+        "hit@10": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LCC_2024_D48_K3",
+          "score": 21.831959,
+          "law_id": "LCC_2024",
+          "article_number": "48",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LCC_2024_D11_K3_DD",
+          "score": 21.101208,
+          "law_id": "LCC_2024",
+          "article_number": "11",
+          "clause_number": "3",
+          "point_number": "d"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LCC_2024_D11_K3_DA",
+          "score": 20.765263,
+          "law_id": "LCC_2024",
+          "article_number": "11",
+          "clause_number": "3",
+          "point_number": "a"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LCC_2024_D26_K1",
+          "score": 20.626554,
+          "law_id": "LCC_2024",
+          "article_number": "26",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LCC_2024_D33_K1_DA",
+          "score": 18.872082,
+          "law_id": "LCC_2024",
+          "article_number": "33",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LCC_2024_D52_K3",
+          "score": 18.799845,
+          "law_id": "LCC_2024",
+          "article_number": "52",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LCC_2024_D59_K2_DB",
+          "score": 18.522455,
+          "law_id": "LCC_2024",
+          "article_number": "59",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LCC_2024_D60_K2_DB",
+          "score": 18.468973,
+          "law_id": "LCC_2024",
+          "article_number": "60",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LCC_2024_D43_K1",
+          "score": 18.066395,
+          "law_id": "LCC_2024",
+          "article_number": "43",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LCC_2024_D45_K2",
+          "score": 18.059576,
+          "law_id": "LCC_2024",
+          "article_number": "45",
+          "clause_number": "2",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_014",
+      "query": "Văn bản công chứng có hiệu lực kể từ thời điểm nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LCC_2024_D6_K1"
+      ],
+      "retrieved_chunk_ids": [
+        "LCC_2024_D76_K5",
+        "LCC_2024_D76_K2",
+        "LCC_2024_D76_K14",
+        "LCC_2024_D76_K7",
+        "LCC_2024_D6_K1",
+        "LCC_2024_D76_K10",
+        "LCC_2024_D76_K13",
+        "LCC_2024_D64_K2",
+        "LCC_2024_D76_K8",
+        "LCC_2024_D76_K12"
+      ],
+      "first_relevant_rank": 5,
+      "latency_seconds": 0.008477600000333041,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 0.0,
+        "recall@3": 0.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.2
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LCC_2024_D76_K5",
+          "score": 28.37593,
+          "law_id": "LCC_2024",
+          "article_number": "76",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LCC_2024_D76_K2",
+          "score": 27.33891,
+          "law_id": "LCC_2024",
+          "article_number": "76",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LCC_2024_D76_K14",
+          "score": 27.335197,
+          "law_id": "LCC_2024",
+          "article_number": "76",
+          "clause_number": "14",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LCC_2024_D76_K7",
+          "score": 27.325813,
+          "law_id": "LCC_2024",
+          "article_number": "76",
+          "clause_number": "7",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LCC_2024_D6_K1",
+          "score": 27.20376,
+          "law_id": "LCC_2024",
+          "article_number": "6",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LCC_2024_D76_K10",
+          "score": 27.19418,
+          "law_id": "LCC_2024",
+          "article_number": "76",
+          "clause_number": "10",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LCC_2024_D76_K13",
+          "score": 25.886253,
+          "law_id": "LCC_2024",
+          "article_number": "76",
+          "clause_number": "13",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LCC_2024_D64_K2",
+          "score": 25.730066,
+          "law_id": "LCC_2024",
+          "article_number": "64",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LCC_2024_D76_K8",
+          "score": 25.723785,
+          "law_id": "LCC_2024",
+          "article_number": "76",
+          "clause_number": "8",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LCC_2024_D76_K12",
+          "score": 25.557163,
+          "law_id": "LCC_2024",
+          "article_number": "76",
+          "clause_number": "12",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_015",
+      "query": "Theo Luật Công chứng 2024, công chứng viên có được công chứng giao dịch liên quan đến tài sản của bản thân không?",
+      "search_law_id": "LCC_2024",
+      "relevant_chunk_ids": [
+        "LCC_2024_D9_K1_DC"
+      ],
+      "retrieved_chunk_ids": [
+        "LCC_2024_D9_K1_DC",
+        "LCC_2024_D44",
+        "LCC_2024_D45_K1",
+        "LCC_2024_D42_K1_DC",
+        "LCC_2024_D71_K1",
+        "LCC_2024_D49_K3",
+        "LCC_2024_D9_K3_DD",
+        "LCC_2024_D18_K1_DC",
+        "LCC_2024_D69_K1_DB",
+        "LCC_2024_D49_K2"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.007327700004680082,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LCC_2024_D9_K1_DC",
+          "score": 36.89782,
+          "law_id": "LCC_2024",
+          "article_number": "9",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LCC_2024_D44",
+          "score": 33.476467,
+          "law_id": "LCC_2024",
+          "article_number": "44",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LCC_2024_D45_K1",
+          "score": 31.324978,
+          "law_id": "LCC_2024",
+          "article_number": "45",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LCC_2024_D42_K1_DC",
+          "score": 30.62709,
+          "law_id": "LCC_2024",
+          "article_number": "42",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LCC_2024_D71_K1",
+          "score": 28.559689,
+          "law_id": "LCC_2024",
+          "article_number": "71",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LCC_2024_D49_K3",
+          "score": 28.121912,
+          "law_id": "LCC_2024",
+          "article_number": "49",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LCC_2024_D9_K3_DD",
+          "score": 28.093636,
+          "law_id": "LCC_2024",
+          "article_number": "9",
+          "clause_number": "3",
+          "point_number": "d"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LCC_2024_D18_K1_DC",
+          "score": 28.06443,
+          "law_id": "LCC_2024",
+          "article_number": "18",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LCC_2024_D69_K1_DB",
+          "score": 27.867672,
+          "law_id": "LCC_2024",
+          "article_number": "69",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LCC_2024_D49_K2",
+          "score": 27.807953,
+          "law_id": "LCC_2024",
+          "article_number": "49",
+          "clause_number": "2",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_016",
+      "query": "Hồ sơ yêu cầu công chứng giao dịch đã soạn sẵn được tiếp nhận hoặc từ chối như thế nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LCC_2024_D42_K2"
+      ],
+      "retrieved_chunk_ids": [
+        "LCC_2024_D42_K2",
+        "LCC_2024_D42_K1_DC",
+        "LCC_2024_D42_K4",
+        "LCC_2024_D42_K1_DA",
+        "LCC_2024_D42_K1_DB",
+        "LCC_2024_D42_K1_DD",
+        "LCC_2024_D42_K5",
+        "LCC_2024_D42_K8",
+        "LCC_2024_D42_K6",
+        "LCC_2024_D42_K7"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.009156200016150251,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LCC_2024_D42_K2",
+          "score": 63.348503,
+          "law_id": "LCC_2024",
+          "article_number": "42",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LCC_2024_D42_K1_DC",
+          "score": 55.738834,
+          "law_id": "LCC_2024",
+          "article_number": "42",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LCC_2024_D42_K4",
+          "score": 55.426983,
+          "law_id": "LCC_2024",
+          "article_number": "42",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LCC_2024_D42_K1_DA",
+          "score": 52.979847,
+          "law_id": "LCC_2024",
+          "article_number": "42",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LCC_2024_D42_K1_DB",
+          "score": 49.99283,
+          "law_id": "LCC_2024",
+          "article_number": "42",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LCC_2024_D42_K1_DD",
+          "score": 47.284615,
+          "law_id": "LCC_2024",
+          "article_number": "42",
+          "clause_number": "1",
+          "point_number": "d"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LCC_2024_D42_K5",
+          "score": 45.933937,
+          "law_id": "LCC_2024",
+          "article_number": "42",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LCC_2024_D42_K8",
+          "score": 42.77257,
+          "law_id": "LCC_2024",
+          "article_number": "42",
+          "clause_number": "8",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LCC_2024_D42_K6",
+          "score": 41.04653,
+          "law_id": "LCC_2024",
+          "article_number": "42",
+          "clause_number": "6",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LCC_2024_D42_K7",
+          "score": 38.55561,
+          "law_id": "LCC_2024",
+          "article_number": "42",
+          "clause_number": "7",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_017",
+      "query": "Theo Luật Công chứng 2024, thời hạn công chứng được tính từ khi nào và tối đa bao lâu?",
+      "search_law_id": "LCC_2024",
+      "relevant_chunk_ids": [
+        "LCC_2024_D45_K1",
+        "LCC_2024_D45_K2"
+      ],
+      "retrieved_chunk_ids": [
+        "LCC_2024_D45_K1",
+        "LCC_2024_D32_K2_DA",
+        "LCC_2024_D15_K2",
+        "LCC_2024_D12_K3",
+        "LCC_2024_D71_K2",
+        "LCC_2024_D76_K8",
+        "LCC_2024_D76_K5",
+        "LCC_2024_D17_K2",
+        "LCC_2024_D76_K7",
+        "LCC_2024_D50_K3"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.009068400016985834,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 0.5,
+        "hit@3": 1.0,
+        "recall@3": 0.5,
+        "hit@5": 1.0,
+        "recall@5": 0.5,
+        "hit@10": 1.0,
+        "recall@10": 0.5,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LCC_2024_D45_K1",
+          "score": 24.41565,
+          "law_id": "LCC_2024",
+          "article_number": "45",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LCC_2024_D32_K2_DA",
+          "score": 23.18463,
+          "law_id": "LCC_2024",
+          "article_number": "32",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LCC_2024_D15_K2",
+          "score": 22.972166,
+          "law_id": "LCC_2024",
+          "article_number": "15",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LCC_2024_D12_K3",
+          "score": 22.91309,
+          "law_id": "LCC_2024",
+          "article_number": "12",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LCC_2024_D71_K2",
+          "score": 22.787851,
+          "law_id": "LCC_2024",
+          "article_number": "71",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LCC_2024_D76_K8",
+          "score": 22.420036,
+          "law_id": "LCC_2024",
+          "article_number": "76",
+          "clause_number": "8",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LCC_2024_D76_K5",
+          "score": 21.85511,
+          "law_id": "LCC_2024",
+          "article_number": "76",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LCC_2024_D17_K2",
+          "score": 20.806644,
+          "law_id": "LCC_2024",
+          "article_number": "17",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LCC_2024_D76_K7",
+          "score": 20.713638,
+          "law_id": "LCC_2024",
+          "article_number": "76",
+          "clause_number": "7",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LCC_2024_D50_K3",
+          "score": 20.394518,
+          "law_id": "LCC_2024",
+          "article_number": "50",
+          "clause_number": "3",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_018",
+      "query": "Công chứng viên có các nghĩa vụ nào về nguyên tắc hành nghề và bảo vệ người yêu cầu công chứng?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LCC_2024_D18_K2_DA",
+        "LCC_2024_D18_K2_DB"
+      ],
+      "retrieved_chunk_ids": [
+        "LCC_2024_D18_K2_DA",
+        "LCC_2024_D36_K1",
+        "BLTTDS_2015_D1",
+        "LCC_2024_D40_K1",
+        "LCC_2024_D72_K3",
+        "LCC_2024_D58_K4",
+        "LCC_2024_D41_K4",
+        "LCC_2024_D18_K2_DB",
+        "LCC_2024_D18_K2_DC",
+        "BLTTDS_2015_D248_K1_DC"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.022537000011652708,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 0.5,
+        "hit@3": 1.0,
+        "recall@3": 0.5,
+        "hit@5": 1.0,
+        "recall@5": 0.5,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LCC_2024_D18_K2_DA",
+          "score": 35.39951,
+          "law_id": "LCC_2024",
+          "article_number": "18",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LCC_2024_D36_K1",
+          "score": 32.63424,
+          "law_id": "LCC_2024",
+          "article_number": "36",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "BLTTDS_2015_D1",
+          "score": 32.53801,
+          "law_id": "BLTTDS_2015",
+          "article_number": "1",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LCC_2024_D40_K1",
+          "score": 32.33065,
+          "law_id": "LCC_2024",
+          "article_number": "40",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LCC_2024_D72_K3",
+          "score": 32.190063,
+          "law_id": "LCC_2024",
+          "article_number": "72",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LCC_2024_D58_K4",
+          "score": 31.834534,
+          "law_id": "LCC_2024",
+          "article_number": "58",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LCC_2024_D41_K4",
+          "score": 31.123837,
+          "law_id": "LCC_2024",
+          "article_number": "41",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LCC_2024_D18_K2_DB",
+          "score": 30.93222,
+          "law_id": "LCC_2024",
+          "article_number": "18",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LCC_2024_D18_K2_DC",
+          "score": 30.222021,
+          "law_id": "LCC_2024",
+          "article_number": "18",
+          "clause_number": "2",
+          "point_number": "c"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "BLTTDS_2015_D248_K1_DC",
+          "score": 30.169067,
+          "law_id": "BLTTDS_2015",
+          "article_number": "248",
+          "clause_number": "1",
+          "point_number": "c"
+        }
+      ]
+    },
+    {
+      "id": "eval_019",
+      "query": "Theo Luật Đất đai 2024, Luật này điều chỉnh những vấn đề quản lý và sử dụng đất đai nào?",
+      "search_law_id": "LDD_2024",
+      "relevant_chunk_ids": [
+        "LDD_2024_D1"
+      ],
+      "retrieved_chunk_ids": [
+        "LDD_2024_D199_K5",
+        "LDD_2024_D130_K4",
+        "LDD_2024_D73_K9",
+        "LDD_2024_D130_K3",
+        "LDD_2024_D159_K3",
+        "LDD_2024_D219_K5_DB",
+        "LDD_2024_D1",
+        "LDD_2024_D191_K2_DA",
+        "LDD_2024_D20_K4",
+        "LDD_2024_D253_K2"
+      ],
+      "first_relevant_rank": 7,
+      "latency_seconds": 0.023623600020073354,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 0.0,
+        "recall@3": 0.0,
+        "hit@5": 0.0,
+        "recall@5": 0.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.14285714285714285
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LDD_2024_D199_K5",
+          "score": 28.791443,
+          "law_id": "LDD_2024",
+          "article_number": "199",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LDD_2024_D130_K4",
+          "score": 26.918968,
+          "law_id": "LDD_2024",
+          "article_number": "130",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LDD_2024_D73_K9",
+          "score": 24.363356,
+          "law_id": "LDD_2024",
+          "article_number": "73",
+          "clause_number": "9",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LDD_2024_D130_K3",
+          "score": 24.33476,
+          "law_id": "LDD_2024",
+          "article_number": "130",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LDD_2024_D159_K3",
+          "score": 24.049984,
+          "law_id": "LDD_2024",
+          "article_number": "159",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LDD_2024_D219_K5_DB",
+          "score": 23.965261,
+          "law_id": "LDD_2024",
+          "article_number": "219",
+          "clause_number": "5",
+          "point_number": "b"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LDD_2024_D1",
+          "score": 23.793589,
+          "law_id": "LDD_2024",
+          "article_number": "1",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LDD_2024_D191_K2_DA",
+          "score": 23.63063,
+          "law_id": "LDD_2024",
+          "article_number": "191",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LDD_2024_D20_K4",
+          "score": 22.8712,
+          "law_id": "LDD_2024",
+          "article_number": "20",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LDD_2024_D253_K2",
+          "score": 22.68969,
+          "law_id": "LDD_2024",
+          "article_number": "253",
+          "clause_number": "2",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_020",
+      "query": "Người sử dụng đất có quyền được cấp Giấy chứng nhận khi đáp ứng điều kiện nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LDD_2024_D26_K1"
+      ],
+      "retrieved_chunk_ids": [
+        "LDD_2024_D146_K3",
+        "LDD_2024_D45_K4",
+        "LDD_2024_D45_K3_DC",
+        "LDD_2024_D26_K1",
+        "LDD_2024_D135_K1",
+        "LDD_2024_D45_K1_DA",
+        "LDD_2024_D135_K3",
+        "LDD_2024_D246",
+        "LDD_2024_D45_K3_DA",
+        "LDD_2024_D138_K5"
+      ],
+      "first_relevant_rank": 4,
+      "latency_seconds": 0.008443500002613291,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 0.0,
+        "recall@3": 0.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.25
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LDD_2024_D146_K3",
+          "score": 38.313576,
+          "law_id": "LDD_2024",
+          "article_number": "146",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LDD_2024_D45_K4",
+          "score": 31.602829,
+          "law_id": "LDD_2024",
+          "article_number": "45",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LDD_2024_D45_K3_DC",
+          "score": 29.705017,
+          "law_id": "LDD_2024",
+          "article_number": "45",
+          "clause_number": "3",
+          "point_number": "c"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LDD_2024_D26_K1",
+          "score": 29.699883,
+          "law_id": "LDD_2024",
+          "article_number": "26",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LDD_2024_D135_K1",
+          "score": 29.590837,
+          "law_id": "LDD_2024",
+          "article_number": "135",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LDD_2024_D45_K1_DA",
+          "score": 29.541538,
+          "law_id": "LDD_2024",
+          "article_number": "45",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LDD_2024_D135_K3",
+          "score": 29.334929,
+          "law_id": "LDD_2024",
+          "article_number": "135",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LDD_2024_D246",
+          "score": 29.330318,
+          "law_id": "LDD_2024",
+          "article_number": "246",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LDD_2024_D45_K3_DA",
+          "score": 29.277487,
+          "law_id": "LDD_2024",
+          "article_number": "45",
+          "clause_number": "3",
+          "point_number": "a"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LDD_2024_D138_K5",
+          "score": 29.224125,
+          "law_id": "LDD_2024",
+          "article_number": "138",
+          "clause_number": "5",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_021",
+      "query": "Theo Luật Đất đai 2024, lấn đất, chiếm đất và hủy hoại đất có bị nghiêm cấm không?",
+      "search_law_id": "LDD_2024",
+      "relevant_chunk_ids": [
+        "LDD_2024_D11_K1"
+      ],
+      "retrieved_chunk_ids": [
+        "LDD_2024_D11_K1",
+        "LDD_2024_D241_K1_DB",
+        "LDD_2024_D139_K2_DA",
+        "LDD_2024_D81_K2",
+        "LDD_2024_D139_K1",
+        "LDD_2024_D210_K4",
+        "LDD_2024_D139_K2_DB",
+        "LDD_2024_D139_K2_DC",
+        "LDD_2024_D11_K5",
+        "LDD_2024_D151_K2_DD"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.007889799977419898,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LDD_2024_D11_K1",
+          "score": 55.57374,
+          "law_id": "LDD_2024",
+          "article_number": "11",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LDD_2024_D241_K1_DB",
+          "score": 38.51212,
+          "law_id": "LDD_2024",
+          "article_number": "241",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LDD_2024_D139_K2_DA",
+          "score": 29.351093,
+          "law_id": "LDD_2024",
+          "article_number": "139",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LDD_2024_D81_K2",
+          "score": 29.186354,
+          "law_id": "LDD_2024",
+          "article_number": "81",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LDD_2024_D139_K1",
+          "score": 29.052963,
+          "law_id": "LDD_2024",
+          "article_number": "139",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LDD_2024_D210_K4",
+          "score": 28.27541,
+          "law_id": "LDD_2024",
+          "article_number": "210",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LDD_2024_D139_K2_DB",
+          "score": 27.95226,
+          "law_id": "LDD_2024",
+          "article_number": "139",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LDD_2024_D139_K2_DC",
+          "score": 26.732077,
+          "law_id": "LDD_2024",
+          "article_number": "139",
+          "clause_number": "2",
+          "point_number": "c"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LDD_2024_D11_K5",
+          "score": 26.580885,
+          "law_id": "LDD_2024",
+          "article_number": "11",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LDD_2024_D151_K2_DD",
+          "score": 26.571953,
+          "law_id": "LDD_2024",
+          "article_number": "151",
+          "clause_number": "2",
+          "point_number": "d"
+        }
+      ]
+    },
+    {
+      "id": "eval_022",
+      "query": "Chuyển đất nông nghiệp sang đất phi nông nghiệp có thuộc trường hợp chuyển mục đích sử dụng đất phải chú ý không?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LDD_2024_D121_K1_DB"
+      ],
+      "retrieved_chunk_ids": [
+        "LDD_2024_D121_K1_DD",
+        "LDD_2024_D121_K3",
+        "LDD_2024_D173_K3",
+        "LDD_2024_D121_K1_DDD",
+        "LDD_2024_D121_K1_DB",
+        "LDD_2024_D121_K1_DG",
+        "LDD_2024_D116_K5",
+        "LDD_2024_D121_K1_DE",
+        "LDD_2024_D173_K1_DD",
+        "LDD_2024_D138_K1_DD"
+      ],
+      "first_relevant_rank": 5,
+      "latency_seconds": 0.030091699998592958,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 0.0,
+        "recall@3": 0.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.2
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LDD_2024_D121_K1_DD",
+          "score": 50.51194,
+          "law_id": "LDD_2024",
+          "article_number": "121",
+          "clause_number": "1",
+          "point_number": "d"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LDD_2024_D121_K3",
+          "score": 50.271805,
+          "law_id": "LDD_2024",
+          "article_number": "121",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LDD_2024_D173_K3",
+          "score": 49.923733,
+          "law_id": "LDD_2024",
+          "article_number": "173",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LDD_2024_D121_K1_DDD",
+          "score": 49.0258,
+          "law_id": "LDD_2024",
+          "article_number": "121",
+          "clause_number": "1",
+          "point_number": "đ"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LDD_2024_D121_K1_DB",
+          "score": 48.325195,
+          "law_id": "LDD_2024",
+          "article_number": "121",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LDD_2024_D121_K1_DG",
+          "score": 48.144604,
+          "law_id": "LDD_2024",
+          "article_number": "121",
+          "clause_number": "1",
+          "point_number": "g"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LDD_2024_D116_K5",
+          "score": 47.346317,
+          "law_id": "LDD_2024",
+          "article_number": "116",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LDD_2024_D121_K1_DE",
+          "score": 47.344936,
+          "law_id": "LDD_2024",
+          "article_number": "121",
+          "clause_number": "1",
+          "point_number": "e"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LDD_2024_D173_K1_DD",
+          "score": 45.437634,
+          "law_id": "LDD_2024",
+          "article_number": "173",
+          "clause_number": "1",
+          "point_number": "d"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LDD_2024_D138_K1_DD",
+          "score": 39.37826,
+          "law_id": "LDD_2024",
+          "article_number": "138",
+          "clause_number": "1",
+          "point_number": "d"
+        }
+      ]
+    },
+    {
+      "id": "eval_023",
+      "query": "Theo Luật Đất đai 2024, cơ quan nào cấp Giấy chứng nhận lần đầu cho người sử dụng đất thuộc khoản 3 và khoản 4 Điều 4?",
+      "search_law_id": "LDD_2024",
+      "relevant_chunk_ids": [
+        "LDD_2024_D136_K1_DB"
+      ],
+      "retrieved_chunk_ids": [
+        "LDD_2024_D246",
+        "LDD_2024_D136_K1_DA",
+        "LDD_2024_D136_K1_DB",
+        "LDD_2024_D3_K33",
+        "LDD_2024_D152_K3_DC",
+        "LDD_2024_D152_K3_DD",
+        "LDD_2024_D152_K3_DDD",
+        "LDD_2024_D137_K1_DB",
+        "LDD_2024_D135_K3",
+        "LDD_2024_D44_K4"
+      ],
+      "first_relevant_rank": 3,
+      "latency_seconds": 0.022618600021814927,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.3333333333333333
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LDD_2024_D246",
+          "score": 44.495914,
+          "law_id": "LDD_2024",
+          "article_number": "246",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LDD_2024_D136_K1_DA",
+          "score": 41.59853,
+          "law_id": "LDD_2024",
+          "article_number": "136",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LDD_2024_D136_K1_DB",
+          "score": 41.454742,
+          "law_id": "LDD_2024",
+          "article_number": "136",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LDD_2024_D3_K33",
+          "score": 40.15537,
+          "law_id": "LDD_2024",
+          "article_number": "3",
+          "clause_number": "33",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LDD_2024_D152_K3_DC",
+          "score": 39.634396,
+          "law_id": "LDD_2024",
+          "article_number": "152",
+          "clause_number": "3",
+          "point_number": "c"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LDD_2024_D152_K3_DD",
+          "score": 38.05204,
+          "law_id": "LDD_2024",
+          "article_number": "152",
+          "clause_number": "3",
+          "point_number": "d"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LDD_2024_D152_K3_DDD",
+          "score": 36.34194,
+          "law_id": "LDD_2024",
+          "article_number": "152",
+          "clause_number": "3",
+          "point_number": "đ"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LDD_2024_D137_K1_DB",
+          "score": 35.88278,
+          "law_id": "LDD_2024",
+          "article_number": "137",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LDD_2024_D135_K3",
+          "score": 35.881527,
+          "law_id": "LDD_2024",
+          "article_number": "135",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LDD_2024_D44_K4",
+          "score": 35.597214,
+          "law_id": "LDD_2024",
+          "article_number": "44",
+          "clause_number": "4",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_024",
+      "query": "Người sử dụng đất phải sử dụng đất đúng mục đích và thực hiện đăng ký, chuyển nhượng quyền sử dụng đất như thế nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LDD_2024_D31_K1",
+        "LDD_2024_D31_K2"
+      ],
+      "retrieved_chunk_ids": [
+        "LKDBDS_2023_D30_K1_DE",
+        "LDD_2024_D27_K2_DB",
+        "LDD_2024_D31_K2",
+        "LDD_2024_D45_K8_DA",
+        "LDD_2024_D227_K6",
+        "LDD_2024_D27_K3_DA",
+        "LDD_2024_D45_K6_DA",
+        "LDD_2024_D241_K1_DB",
+        "LDD_2024_D227_K5",
+        "LDD_2024_D139_K3_DB"
+      ],
+      "first_relevant_rank": 3,
+      "latency_seconds": 0.020045299985213205,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 1.0,
+        "recall@3": 0.5,
+        "hit@5": 1.0,
+        "recall@5": 0.5,
+        "hit@10": 1.0,
+        "recall@10": 0.5,
+        "mrr@10": 0.3333333333333333
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LKDBDS_2023_D30_K1_DE",
+          "score": 40.975857,
+          "law_id": "LKDBDS_2023",
+          "article_number": "30",
+          "clause_number": "1",
+          "point_number": "e"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LDD_2024_D27_K2_DB",
+          "score": 39.382755,
+          "law_id": "LDD_2024",
+          "article_number": "27",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LDD_2024_D31_K2",
+          "score": 37.84061,
+          "law_id": "LDD_2024",
+          "article_number": "31",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LDD_2024_D45_K8_DA",
+          "score": 36.91879,
+          "law_id": "LDD_2024",
+          "article_number": "45",
+          "clause_number": "8",
+          "point_number": "a"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LDD_2024_D227_K6",
+          "score": 36.65455,
+          "law_id": "LDD_2024",
+          "article_number": "227",
+          "clause_number": "6",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LDD_2024_D27_K3_DA",
+          "score": 36.345085,
+          "law_id": "LDD_2024",
+          "article_number": "27",
+          "clause_number": "3",
+          "point_number": "a"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LDD_2024_D45_K6_DA",
+          "score": 36.044823,
+          "law_id": "LDD_2024",
+          "article_number": "45",
+          "clause_number": "6",
+          "point_number": "a"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LDD_2024_D241_K1_DB",
+          "score": 35.74876,
+          "law_id": "LDD_2024",
+          "article_number": "241",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LDD_2024_D227_K5",
+          "score": 35.744194,
+          "law_id": "LDD_2024",
+          "article_number": "227",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LDD_2024_D139_K3_DB",
+          "score": 34.82355,
+          "law_id": "LDD_2024",
+          "article_number": "139",
+          "clause_number": "3",
+          "point_number": "b"
+        }
+      ]
+    },
+    {
+      "id": "eval_025",
+      "query": "Theo Luật Kinh doanh bất động sản 2023, Chính phủ quy định chi tiết về trình tự, thủ tục, hồ sơ chuyển nhượng hợp đồng nào?",
+      "search_law_id": "LKDBDS_2023",
+      "relevant_chunk_ids": [
+        "LKDBDS_2023_D52"
+      ],
+      "retrieved_chunk_ids": [
+        "LKDBDS_2023_D52",
+        "LKDBDS_2023_D42_K1_DB",
+        "LKDBDS_2023_D42_K1_DA",
+        "LKDBDS_2023_D42_K4",
+        "LKDBDS_2023_D51_K2",
+        "LKDBDS_2023_D42_K1_DC",
+        "LKDBDS_2023_D31_K7",
+        "LKDBDS_2023_D46_K3_DC",
+        "LKDBDS_2023_D83_K13",
+        "LKDBDS_2023_D28_K2_DE"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.008278799999970943,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LKDBDS_2023_D52",
+          "score": 77.355255,
+          "law_id": "LKDBDS_2023",
+          "article_number": "52",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LKDBDS_2023_D42_K1_DB",
+          "score": 53.52955,
+          "law_id": "LKDBDS_2023",
+          "article_number": "42",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LKDBDS_2023_D42_K1_DA",
+          "score": 50.80787,
+          "law_id": "LKDBDS_2023",
+          "article_number": "42",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LKDBDS_2023_D42_K4",
+          "score": 50.38349,
+          "law_id": "LKDBDS_2023",
+          "article_number": "42",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LKDBDS_2023_D51_K2",
+          "score": 48.673035,
+          "law_id": "LKDBDS_2023",
+          "article_number": "51",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LKDBDS_2023_D42_K1_DC",
+          "score": 47.972656,
+          "law_id": "LKDBDS_2023",
+          "article_number": "42",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LKDBDS_2023_D31_K7",
+          "score": 46.129635,
+          "law_id": "LKDBDS_2023",
+          "article_number": "31",
+          "clause_number": "7",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LKDBDS_2023_D46_K3_DC",
+          "score": 45.60328,
+          "law_id": "LKDBDS_2023",
+          "article_number": "46",
+          "clause_number": "3",
+          "point_number": "c"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LKDBDS_2023_D83_K13",
+          "score": 45.098396,
+          "law_id": "LKDBDS_2023",
+          "article_number": "83",
+          "clause_number": "13",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LKDBDS_2023_D28_K2_DE",
+          "score": 45.058674,
+          "law_id": "LKDBDS_2023",
+          "article_number": "28",
+          "clause_number": "2",
+          "point_number": "e"
+        }
+      ]
+    },
+    {
+      "id": "eval_026",
+      "query": "Khi cơ quan, tổ chức bán hoặc cho thuê bất động sản là tài sản công thì trường hợp đó có bị loại trừ khỏi phạm vi điều chỉnh không?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LKDBDS_2023_D1_K2_DB"
+      ],
+      "retrieved_chunk_ids": [
+        "LKDBDS_2023_D1_K2_DB",
+        "LKDBDS_2023_D1_K2_DC",
+        "LNO_2023_D125_K4",
+        "LKDBDS_2023_D19_K1_DP",
+        "LKDBDS_2023_D1_K2_DA",
+        "LKDBDS_2023_D1_K2_DDD",
+        "LKDBDS_2023_D1_K2_DD",
+        "BLTTDS_2015_D433_K1_DB",
+        "BLTTDS_2015_D452_K1_DB",
+        "LKDBDS_2023_D10_K3_DA"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.009328499989351258,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LKDBDS_2023_D1_K2_DB",
+          "score": 51.926216,
+          "law_id": "LKDBDS_2023",
+          "article_number": "1",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LKDBDS_2023_D1_K2_DC",
+          "score": 45.35838,
+          "law_id": "LKDBDS_2023",
+          "article_number": "1",
+          "clause_number": "2",
+          "point_number": "c"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LNO_2023_D125_K4",
+          "score": 44.795677,
+          "law_id": "LNO_2023",
+          "article_number": "125",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LKDBDS_2023_D19_K1_DP",
+          "score": 40.95056,
+          "law_id": "LKDBDS_2023",
+          "article_number": "19",
+          "clause_number": "1",
+          "point_number": "p"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LKDBDS_2023_D1_K2_DA",
+          "score": 38.66685,
+          "law_id": "LKDBDS_2023",
+          "article_number": "1",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LKDBDS_2023_D1_K2_DDD",
+          "score": 38.105854,
+          "law_id": "LKDBDS_2023",
+          "article_number": "1",
+          "clause_number": "2",
+          "point_number": "đ"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LKDBDS_2023_D1_K2_DD",
+          "score": 38.01676,
+          "law_id": "LKDBDS_2023",
+          "article_number": "1",
+          "clause_number": "2",
+          "point_number": "d"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "BLTTDS_2015_D433_K1_DB",
+          "score": 37.799282,
+          "law_id": "BLTTDS_2015",
+          "article_number": "433",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "BLTTDS_2015_D452_K1_DB",
+          "score": 37.698685,
+          "law_id": "BLTTDS_2015",
+          "article_number": "452",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LKDBDS_2023_D10_K3_DA",
+          "score": 37.062916,
+          "law_id": "LKDBDS_2023",
+          "article_number": "10",
+          "clause_number": "3",
+          "point_number": "a"
+        }
+      ]
+    },
+    {
+      "id": "eval_027",
+      "query": "Theo Luật Kinh doanh bất động sản 2023, sàn giao dịch bất động sản là nơi diễn ra những giao dịch nào?",
+      "search_law_id": "LKDBDS_2023",
+      "relevant_chunk_ids": [
+        "LKDBDS_2023_D3_K10"
+      ],
+      "retrieved_chunk_ids": [
+        "LKDBDS_2023_D3_K10",
+        "LKDBDS_2023_D54_K3",
+        "LKDBDS_2023_D59_K1_DC",
+        "LKDBDS_2023_D65_K2_DB",
+        "LKDBDS_2023_D59_K2_DC",
+        "LKDBDS_2023_D54_K2",
+        "LKDBDS_2023_D54_K1",
+        "LKDBDS_2023_D56_K1",
+        "LKDBDS_2023_D60_K1_DC",
+        "LKDBDS_2023_D56_K8"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.007005899999057874,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LKDBDS_2023_D3_K10",
+          "score": 51.260353,
+          "law_id": "LKDBDS_2023",
+          "article_number": "3",
+          "clause_number": "10",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LKDBDS_2023_D54_K3",
+          "score": 38.450478,
+          "law_id": "LKDBDS_2023",
+          "article_number": "54",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LKDBDS_2023_D59_K1_DC",
+          "score": 37.359596,
+          "law_id": "LKDBDS_2023",
+          "article_number": "59",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LKDBDS_2023_D65_K2_DB",
+          "score": 36.418396,
+          "law_id": "LKDBDS_2023",
+          "article_number": "65",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LKDBDS_2023_D59_K2_DC",
+          "score": 36.358955,
+          "law_id": "LKDBDS_2023",
+          "article_number": "59",
+          "clause_number": "2",
+          "point_number": "c"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LKDBDS_2023_D54_K2",
+          "score": 36.096672,
+          "law_id": "LKDBDS_2023",
+          "article_number": "54",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LKDBDS_2023_D54_K1",
+          "score": 35.27151,
+          "law_id": "LKDBDS_2023",
+          "article_number": "54",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LKDBDS_2023_D56_K1",
+          "score": 34.878906,
+          "law_id": "LKDBDS_2023",
+          "article_number": "56",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LKDBDS_2023_D60_K1_DC",
+          "score": 34.71794,
+          "law_id": "LKDBDS_2023",
+          "article_number": "60",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LKDBDS_2023_D56_K8",
+          "score": 34.6877,
+          "law_id": "LKDBDS_2023",
+          "article_number": "56",
+          "clause_number": "8",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_028",
+      "query": "Môi giới bất động sản được hiểu là việc làm trung gian cho các bên trong những giao dịch nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LKDBDS_2023_D3_K11"
+      ],
+      "retrieved_chunk_ids": [
+        "LKDBDS_2023_D3_K11",
+        "LKDBDS_2023_D56_K3",
+        "LKDBDS_2023_D58_K8",
+        "LKDBDS_2023_D65_K1_DB",
+        "LKDBDS_2023_D65_K2_DB",
+        "LKDBDS_2023_D58_K7",
+        "LKDBDS_2023_D63_K2",
+        "LKDBDS_2023_D65_K1_DA",
+        "LKDBDS_2023_D61_K2_DB",
+        "LKDBDS_2023_D64_K1_DC"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.030699500028276816,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LKDBDS_2023_D3_K11",
+          "score": 45.64482,
+          "law_id": "LKDBDS_2023",
+          "article_number": "3",
+          "clause_number": "11",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LKDBDS_2023_D56_K3",
+          "score": 34.919918,
+          "law_id": "LKDBDS_2023",
+          "article_number": "56",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LKDBDS_2023_D58_K8",
+          "score": 34.83025,
+          "law_id": "LKDBDS_2023",
+          "article_number": "58",
+          "clause_number": "8",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LKDBDS_2023_D65_K1_DB",
+          "score": 34.626347,
+          "law_id": "LKDBDS_2023",
+          "article_number": "65",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LKDBDS_2023_D65_K2_DB",
+          "score": 34.333862,
+          "law_id": "LKDBDS_2023",
+          "article_number": "65",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LKDBDS_2023_D58_K7",
+          "score": 33.258686,
+          "law_id": "LKDBDS_2023",
+          "article_number": "58",
+          "clause_number": "7",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LKDBDS_2023_D63_K2",
+          "score": 30.865967,
+          "law_id": "LKDBDS_2023",
+          "article_number": "63",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LKDBDS_2023_D65_K1_DA",
+          "score": 30.646109,
+          "law_id": "LKDBDS_2023",
+          "article_number": "65",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LKDBDS_2023_D61_K2_DB",
+          "score": 30.494955,
+          "law_id": "LKDBDS_2023",
+          "article_number": "61",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LKDBDS_2023_D64_K1_DC",
+          "score": 30.443865,
+          "law_id": "LKDBDS_2023",
+          "article_number": "64",
+          "clause_number": "1",
+          "point_number": "c"
+        }
+      ]
+    },
+    {
+      "id": "eval_029",
+      "query": "Theo Luật Kinh doanh bất động sản 2023, chủ đầu tư có cần được ngân hàng bảo lãnh trước khi bán nhà ở hình thành trong tương lai không?",
+      "search_law_id": "LKDBDS_2023",
+      "relevant_chunk_ids": [
+        "LKDBDS_2023_D26_K1"
+      ],
+      "retrieved_chunk_ids": [
+        "LKDBDS_2023_D26_K1",
+        "LKDBDS_2023_D26_K4",
+        "LKDBDS_2023_D26_K2",
+        "LKDBDS_2023_D26_K6",
+        "LKDBDS_2023_D83_K7",
+        "LKDBDS_2023_D26_K5",
+        "LKDBDS_2023_D26_K8",
+        "LKDBDS_2023_D46_K1_DDD",
+        "LKDBDS_2023_D26_K7",
+        "LKDBDS_2023_D83_K6"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.01853770000161603,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LKDBDS_2023_D26_K1",
+          "score": 90.4187,
+          "law_id": "LKDBDS_2023",
+          "article_number": "26",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LKDBDS_2023_D26_K4",
+          "score": 81.30299,
+          "law_id": "LKDBDS_2023",
+          "article_number": "26",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LKDBDS_2023_D26_K2",
+          "score": 81.18898,
+          "law_id": "LKDBDS_2023",
+          "article_number": "26",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LKDBDS_2023_D26_K6",
+          "score": 79.48643,
+          "law_id": "LKDBDS_2023",
+          "article_number": "26",
+          "clause_number": "6",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LKDBDS_2023_D83_K7",
+          "score": 78.49686,
+          "law_id": "LKDBDS_2023",
+          "article_number": "83",
+          "clause_number": "7",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LKDBDS_2023_D26_K5",
+          "score": 77.26882,
+          "law_id": "LKDBDS_2023",
+          "article_number": "26",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LKDBDS_2023_D26_K8",
+          "score": 74.238,
+          "law_id": "LKDBDS_2023",
+          "article_number": "26",
+          "clause_number": "8",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LKDBDS_2023_D46_K1_DDD",
+          "score": 73.98751,
+          "law_id": "LKDBDS_2023",
+          "article_number": "46",
+          "clause_number": "1",
+          "point_number": "đ"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LKDBDS_2023_D26_K7",
+          "score": 72.86056,
+          "law_id": "LKDBDS_2023",
+          "article_number": "26",
+          "clause_number": "7",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LKDBDS_2023_D83_K6",
+          "score": 72.53043,
+          "law_id": "LKDBDS_2023",
+          "article_number": "83",
+          "clause_number": "6",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_030",
+      "query": "Trong kinh doanh bất động sản, hợp đồng dịch vụ sàn giao dịch và hợp đồng dịch vụ môi giới là các loại hợp đồng nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LKDBDS_2023_D44_K2_DA",
+        "LKDBDS_2023_D44_K2_DB"
+      ],
+      "retrieved_chunk_ids": [
+        "LKDBDS_2023_D61_K2_DB",
+        "LKDBDS_2023_D56_K3",
+        "LKDBDS_2023_D63_K2",
+        "LKDBDS_2023_D44_K2_DA",
+        "LKDBDS_2023_D44_K2_DB",
+        "LKDBDS_2023_D65_K2_DB",
+        "LKDBDS_2023_D69_K1_DB",
+        "LKDBDS_2023_D69_K1_DC",
+        "LKDBDS_2023_D63_K1",
+        "LKDBDS_2023_D81_K4_DB"
+      ],
+      "first_relevant_rank": 4,
+      "latency_seconds": 0.007893800007877871,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 0.0,
+        "recall@3": 0.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.25
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LKDBDS_2023_D61_K2_DB",
+          "score": 45.077843,
+          "law_id": "LKDBDS_2023",
+          "article_number": "61",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LKDBDS_2023_D56_K3",
+          "score": 45.05182,
+          "law_id": "LKDBDS_2023",
+          "article_number": "56",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LKDBDS_2023_D63_K2",
+          "score": 44.64977,
+          "law_id": "LKDBDS_2023",
+          "article_number": "63",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LKDBDS_2023_D44_K2_DA",
+          "score": 44.447823,
+          "law_id": "LKDBDS_2023",
+          "article_number": "44",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LKDBDS_2023_D44_K2_DB",
+          "score": 44.16699,
+          "law_id": "LKDBDS_2023",
+          "article_number": "44",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LKDBDS_2023_D65_K2_DB",
+          "score": 43.848656,
+          "law_id": "LKDBDS_2023",
+          "article_number": "65",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LKDBDS_2023_D69_K1_DB",
+          "score": 43.733334,
+          "law_id": "LKDBDS_2023",
+          "article_number": "69",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LKDBDS_2023_D69_K1_DC",
+          "score": 43.558483,
+          "law_id": "LKDBDS_2023",
+          "article_number": "69",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LKDBDS_2023_D63_K1",
+          "score": 42.752914,
+          "law_id": "LKDBDS_2023",
+          "article_number": "63",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LKDBDS_2023_D81_K4_DB",
+          "score": 42.53389,
+          "law_id": "LKDBDS_2023",
+          "article_number": "81",
+          "clause_number": "4",
+          "point_number": "b"
+        }
+      ]
+    },
+    {
+      "id": "eval_031",
+      "query": "Theo Luật Nhà ở 2023, giao dịch về nhà ở bao gồm những hình thức nào?",
+      "search_law_id": "LNO_2023",
+      "relevant_chunk_ids": [
+        "LNO_2023_D159"
+      ],
+      "retrieved_chunk_ids": [
+        "LNO_2023_D48_K1_DE",
+        "LNO_2023_D114_K1_DB",
+        "LNO_2023_D159",
+        "LNO_2023_D114_K1_DG",
+        "LNO_2023_D8_K2_DA",
+        "LNO_2023_D30_K1_DDD",
+        "LNO_2023_D114_K1_DE",
+        "LNO_2023_D114_K1_DDD",
+        "LNO_2023_D30_K1_DA",
+        "LNO_2023_D114_K1_DC"
+      ],
+      "first_relevant_rank": 3,
+      "latency_seconds": 0.021602799999527633,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.3333333333333333
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LNO_2023_D48_K1_DE",
+          "score": 23.172367,
+          "law_id": "LNO_2023",
+          "article_number": "48",
+          "clause_number": "1",
+          "point_number": "e"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LNO_2023_D114_K1_DB",
+          "score": 23.045315,
+          "law_id": "LNO_2023",
+          "article_number": "114",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LNO_2023_D159",
+          "score": 22.401386,
+          "law_id": "LNO_2023",
+          "article_number": "159",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LNO_2023_D114_K1_DG",
+          "score": 22.328566,
+          "law_id": "LNO_2023",
+          "article_number": "114",
+          "clause_number": "1",
+          "point_number": "g"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LNO_2023_D8_K2_DA",
+          "score": 22.279167,
+          "law_id": "LNO_2023",
+          "article_number": "8",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LNO_2023_D30_K1_DDD",
+          "score": 22.167002,
+          "law_id": "LNO_2023",
+          "article_number": "30",
+          "clause_number": "1",
+          "point_number": "đ"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LNO_2023_D114_K1_DE",
+          "score": 22.140388,
+          "law_id": "LNO_2023",
+          "article_number": "114",
+          "clause_number": "1",
+          "point_number": "e"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LNO_2023_D114_K1_DDD",
+          "score": 22.029161,
+          "law_id": "LNO_2023",
+          "article_number": "114",
+          "clause_number": "1",
+          "point_number": "đ"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LNO_2023_D30_K1_DA",
+          "score": 21.89774,
+          "law_id": "LNO_2023",
+          "article_number": "30",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LNO_2023_D114_K1_DC",
+          "score": 21.810379,
+          "law_id": "LNO_2023",
+          "article_number": "114",
+          "clause_number": "1",
+          "point_number": "c"
+        }
+      ]
+    },
+    {
+      "id": "eval_032",
+      "query": "Nhà chung cư có đặc điểm gì về số tầng, căn hộ và phần sở hữu chung riêng?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LNO_2023_D2_K3"
+      ],
+      "retrieved_chunk_ids": [
+        "LNO_2023_D163_K2",
+        "LNO_2023_D2_K20",
+        "LNO_2023_D2_K3",
+        "LNO_2023_D142_K1_DA",
+        "LNO_2023_D142_K1_DC",
+        "LNO_2023_D143_K1",
+        "LNO_2023_D142_K2_DB",
+        "LNO_2023_D155_K4",
+        "LNO_2023_D151_K5_DB",
+        "LNO_2023_D152_K1"
+      ],
+      "first_relevant_rank": 3,
+      "latency_seconds": 0.03247330000158399,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.3333333333333333
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LNO_2023_D163_K2",
+          "score": 45.557453,
+          "law_id": "LNO_2023",
+          "article_number": "163",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LNO_2023_D2_K20",
+          "score": 43.054127,
+          "law_id": "LNO_2023",
+          "article_number": "2",
+          "clause_number": "20",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LNO_2023_D2_K3",
+          "score": 42.88443,
+          "law_id": "LNO_2023",
+          "article_number": "2",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LNO_2023_D142_K1_DA",
+          "score": 42.61192,
+          "law_id": "LNO_2023",
+          "article_number": "142",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LNO_2023_D142_K1_DC",
+          "score": 41.70017,
+          "law_id": "LNO_2023",
+          "article_number": "142",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LNO_2023_D143_K1",
+          "score": 40.163223,
+          "law_id": "LNO_2023",
+          "article_number": "143",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LNO_2023_D142_K2_DB",
+          "score": 39.71225,
+          "law_id": "LNO_2023",
+          "article_number": "142",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LNO_2023_D155_K4",
+          "score": 38.118107,
+          "law_id": "LNO_2023",
+          "article_number": "155",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LNO_2023_D151_K5_DB",
+          "score": 37.873608,
+          "law_id": "LNO_2023",
+          "article_number": "151",
+          "clause_number": "5",
+          "point_number": "b"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LNO_2023_D152_K1",
+          "score": 37.415024,
+          "law_id": "LNO_2023",
+          "article_number": "152",
+          "clause_number": "1",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_033",
+      "query": "Theo Luật Nhà ở 2023, những nhóm chủ thể nào được sở hữu nhà ở tại Việt Nam?",
+      "search_law_id": "LNO_2023",
+      "relevant_chunk_ids": [
+        "LNO_2023_D8_K1_DA",
+        "LNO_2023_D8_K1_DB",
+        "LNO_2023_D8_K1_DC"
+      ],
+      "retrieved_chunk_ids": [
+        "LNO_2023_D20_K2_DDD",
+        "LNO_2023_D20_K2_DC",
+        "LNO_2023_D21_K2_DA",
+        "LNO_2023_D161_K2_DB",
+        "LNO_2023_D8_K2_DB",
+        "LNO_2023_D8_K3",
+        "LNO_2023_D10_K1_DD",
+        "LNO_2023_D161_K3",
+        "LNO_2023_D10_K1_DG",
+        "LNO_2023_D21_K2_DD"
+      ],
+      "first_relevant_rank": null,
+      "latency_seconds": 0.028953200002433732,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 0.0,
+        "recall@3": 0.0,
+        "hit@5": 0.0,
+        "recall@5": 0.0,
+        "hit@10": 0.0,
+        "recall@10": 0.0,
+        "mrr@10": 0.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LNO_2023_D20_K2_DDD",
+          "score": 32.700306,
+          "law_id": "LNO_2023",
+          "article_number": "20",
+          "clause_number": "2",
+          "point_number": "đ"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LNO_2023_D20_K2_DC",
+          "score": 31.437248,
+          "law_id": "LNO_2023",
+          "article_number": "20",
+          "clause_number": "2",
+          "point_number": "c"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LNO_2023_D21_K2_DA",
+          "score": 30.839224,
+          "law_id": "LNO_2023",
+          "article_number": "21",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LNO_2023_D161_K2_DB",
+          "score": 30.308199,
+          "law_id": "LNO_2023",
+          "article_number": "161",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LNO_2023_D8_K2_DB",
+          "score": 29.466152,
+          "law_id": "LNO_2023",
+          "article_number": "8",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LNO_2023_D8_K3",
+          "score": 29.431606,
+          "law_id": "LNO_2023",
+          "article_number": "8",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LNO_2023_D10_K1_DD",
+          "score": 29.336826,
+          "law_id": "LNO_2023",
+          "article_number": "10",
+          "clause_number": "1",
+          "point_number": "d"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LNO_2023_D161_K3",
+          "score": 29.211803,
+          "law_id": "LNO_2023",
+          "article_number": "161",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LNO_2023_D10_K1_DG",
+          "score": 29.194275,
+          "law_id": "LNO_2023",
+          "article_number": "10",
+          "clause_number": "1",
+          "point_number": "g"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LNO_2023_D21_K2_DD",
+          "score": 29.077656,
+          "law_id": "LNO_2023",
+          "article_number": "21",
+          "clause_number": "2",
+          "point_number": "d"
+        }
+      ]
+    },
+    {
+      "id": "eval_034",
+      "query": "Không đóng kinh phí bảo trì hoặc sử dụng sai quỹ bảo trì phần sở hữu chung nhà chung cư có bị cấm không?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LNO_2023_D3_K8_DA"
+      ],
+      "retrieved_chunk_ids": [
+        "LNO_2023_D3_K8_DA",
+        "LNO_2023_D155_K1",
+        "LNO_2023_D155_K3",
+        "LNO_2023_D152_K2",
+        "LNO_2023_D152_K3",
+        "LNO_2023_D152_K4",
+        "LNO_2023_D130_K1",
+        "LNO_2023_D163_K2",
+        "LNO_2023_D153_K4",
+        "LNO_2023_D153_K1_DB"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.02733989999978803,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LNO_2023_D3_K8_DA",
+          "score": 59.608833,
+          "law_id": "LNO_2023",
+          "article_number": "3",
+          "clause_number": "8",
+          "point_number": "a"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LNO_2023_D155_K1",
+          "score": 56.76808,
+          "law_id": "LNO_2023",
+          "article_number": "155",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LNO_2023_D155_K3",
+          "score": 53.2114,
+          "law_id": "LNO_2023",
+          "article_number": "155",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LNO_2023_D152_K2",
+          "score": 51.35501,
+          "law_id": "LNO_2023",
+          "article_number": "152",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LNO_2023_D152_K3",
+          "score": 50.13633,
+          "law_id": "LNO_2023",
+          "article_number": "152",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LNO_2023_D152_K4",
+          "score": 49.53772,
+          "law_id": "LNO_2023",
+          "article_number": "152",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LNO_2023_D130_K1",
+          "score": 49.414818,
+          "law_id": "LNO_2023",
+          "article_number": "130",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LNO_2023_D163_K2",
+          "score": 48.364502,
+          "law_id": "LNO_2023",
+          "article_number": "163",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LNO_2023_D153_K4",
+          "score": 46.870625,
+          "law_id": "LNO_2023",
+          "article_number": "153",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LNO_2023_D153_K1_DB",
+          "score": 46.6869,
+          "law_id": "LNO_2023",
+          "article_number": "153",
+          "clause_number": "1",
+          "point_number": "b"
+        }
+      ]
+    },
+    {
+      "id": "eval_035",
+      "query": "Theo Luật Nhà ở 2023, cá nhân có quyền có chỗ ở thông qua những hình thức nào?",
+      "search_law_id": "LNO_2023",
+      "relevant_chunk_ids": [
+        "LNO_2023_D6_K1"
+      ],
+      "retrieved_chunk_ids": [
+        "LNO_2023_D6_K1",
+        "LNO_2023_D17_K2_DC",
+        "LNO_2023_D17_K2_DB",
+        "LNO_2023_D17_K2_DA",
+        "LNO_2023_D8_K2_DA",
+        "LNO_2023_D114_K1_DA",
+        "LNO_2023_D4_K1",
+        "LNO_2023_D8_K2_DC",
+        "LNO_2023_D114_K1_DB",
+        "LNO_2023_D114_K1_DDD"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.027903799986233935,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LNO_2023_D6_K1",
+          "score": 38.713623,
+          "law_id": "LNO_2023",
+          "article_number": "6",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LNO_2023_D17_K2_DC",
+          "score": 31.235106,
+          "law_id": "LNO_2023",
+          "article_number": "17",
+          "clause_number": "2",
+          "point_number": "c"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LNO_2023_D17_K2_DB",
+          "score": 29.904682,
+          "law_id": "LNO_2023",
+          "article_number": "17",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LNO_2023_D17_K2_DA",
+          "score": 29.834549,
+          "law_id": "LNO_2023",
+          "article_number": "17",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LNO_2023_D8_K2_DA",
+          "score": 28.701902,
+          "law_id": "LNO_2023",
+          "article_number": "8",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LNO_2023_D114_K1_DA",
+          "score": 28.637716,
+          "law_id": "LNO_2023",
+          "article_number": "114",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LNO_2023_D4_K1",
+          "score": 27.18153,
+          "law_id": "LNO_2023",
+          "article_number": "4",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LNO_2023_D8_K2_DC",
+          "score": 26.968943,
+          "law_id": "LNO_2023",
+          "article_number": "8",
+          "clause_number": "2",
+          "point_number": "c"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LNO_2023_D114_K1_DB",
+          "score": 25.225033,
+          "law_id": "LNO_2023",
+          "article_number": "114",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LNO_2023_D114_K1_DDD",
+          "score": 24.239744,
+          "law_id": "LNO_2023",
+          "article_number": "114",
+          "clause_number": "1",
+          "point_number": "đ"
+        }
+      ]
+    },
+    {
+      "id": "eval_036",
+      "query": "Phát triển nhà ở là đầu tư xây mới, xây dựng lại hoặc cải tạo để làm gì?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LNO_2023_D2_K15"
+      ],
+      "retrieved_chunk_ids": [
+        "LNO_2023_D2_K15",
+        "LNO_2023_D65_K1",
+        "LXD_2014_D3_K15",
+        "LNO_2023_D4_K1",
+        "LNO_2023_D115_K4_DA",
+        "LNO_2023_D49_K5",
+        "LNO_2023_D198_K2_DC",
+        "LNO_2023_D115_K4_DDD",
+        "LNO_2023_D2_K12",
+        "LDD_2024_D79_K21"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.027085499983513728,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LNO_2023_D2_K15",
+          "score": 48.695023,
+          "law_id": "LNO_2023",
+          "article_number": "2",
+          "clause_number": "15",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LNO_2023_D65_K1",
+          "score": 42.982044,
+          "law_id": "LNO_2023",
+          "article_number": "65",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LXD_2014_D3_K15",
+          "score": 42.14273,
+          "law_id": "LXD_2014",
+          "article_number": "3",
+          "clause_number": "15",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LNO_2023_D4_K1",
+          "score": 41.31767,
+          "law_id": "LNO_2023",
+          "article_number": "4",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LNO_2023_D115_K4_DA",
+          "score": 40.28052,
+          "law_id": "LNO_2023",
+          "article_number": "115",
+          "clause_number": "4",
+          "point_number": "a"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LNO_2023_D49_K5",
+          "score": 39.181736,
+          "law_id": "LNO_2023",
+          "article_number": "49",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LNO_2023_D198_K2_DC",
+          "score": 38.66787,
+          "law_id": "LNO_2023",
+          "article_number": "198",
+          "clause_number": "2",
+          "point_number": "c"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LNO_2023_D115_K4_DDD",
+          "score": 37.576233,
+          "law_id": "LNO_2023",
+          "article_number": "115",
+          "clause_number": "4",
+          "point_number": "đ"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LNO_2023_D2_K12",
+          "score": 37.27547,
+          "law_id": "LNO_2023",
+          "article_number": "2",
+          "clause_number": "12",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LDD_2024_D79_K21",
+          "score": 36.81785,
+          "law_id": "LDD_2024",
+          "article_number": "79",
+          "clause_number": "21",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_037",
+      "query": "Theo Luật Tương trợ tư pháp về hình sự 2025, Luật này điều chỉnh những nội dung nào giữa Việt Nam với nước ngoài?",
+      "search_law_id": "LTTPHS_2025",
+      "relevant_chunk_ids": [
+        "LTTPHS_2025_D1"
+      ],
+      "retrieved_chunk_ids": [
+        "LTTPHS_2025_D1",
+        "LTTPHS_2025_D17_K1",
+        "LTTPHS_2025_D2",
+        "LTTPHS_2025_D17_K2",
+        "LTTPHS_2025_D20_K1_DH",
+        "LTTPHS_2025_D28_K5",
+        "LTTPHS_2025_D20_K1_DG",
+        "LTTPHS_2025_D20_K1_DC",
+        "LTTPHS_2025_D20_K1_DB",
+        "LTTPHS_2025_D20_K1_DDD"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.020787500019650906,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LTTPHS_2025_D1",
+          "score": 60.296696,
+          "law_id": "LTTPHS_2025",
+          "article_number": "1",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LTTPHS_2025_D17_K1",
+          "score": 56.03451,
+          "law_id": "LTTPHS_2025",
+          "article_number": "17",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LTTPHS_2025_D2",
+          "score": 55.330914,
+          "law_id": "LTTPHS_2025",
+          "article_number": "2",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LTTPHS_2025_D17_K2",
+          "score": 54.22264,
+          "law_id": "LTTPHS_2025",
+          "article_number": "17",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LTTPHS_2025_D20_K1_DH",
+          "score": 54.03698,
+          "law_id": "LTTPHS_2025",
+          "article_number": "20",
+          "clause_number": "1",
+          "point_number": "h"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LTTPHS_2025_D28_K5",
+          "score": 53.730934,
+          "law_id": "LTTPHS_2025",
+          "article_number": "28",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LTTPHS_2025_D20_K1_DG",
+          "score": 51.707542,
+          "law_id": "LTTPHS_2025",
+          "article_number": "20",
+          "clause_number": "1",
+          "point_number": "g"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LTTPHS_2025_D20_K1_DC",
+          "score": 51.541557,
+          "law_id": "LTTPHS_2025",
+          "article_number": "20",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LTTPHS_2025_D20_K1_DB",
+          "score": 51.483902,
+          "law_id": "LTTPHS_2025",
+          "article_number": "20",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LTTPHS_2025_D20_K1_DDD",
+          "score": 51.483902,
+          "law_id": "LTTPHS_2025",
+          "article_number": "20",
+          "clause_number": "1",
+          "point_number": "đ"
+        }
+      ]
+    },
+    {
+      "id": "eval_038",
+      "query": "Cơ quan trung ương của Việt Nam trong tương trợ tư pháp về hình sự là cơ quan nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LTTPHS_2025_D6_K1"
+      ],
+      "retrieved_chunk_ids": [
+        "LTTPHS_2025_D6_K1",
+        "LTTPHS_2025_D6_K2",
+        "LTTPHS_2025_D21_K1_DA",
+        "LTTPHS_2025_D31_K1_DA",
+        "LTTPHS_2025_D18_K1",
+        "LTTPHS_2025_D20_K1_DC",
+        "LTTPHS_2025_D36",
+        "LTTPHS_2025_D17_K1",
+        "LTTPHS_2025_D1",
+        "LTTPHS_2025_D3_K5"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.008300200017401949,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LTTPHS_2025_D6_K1",
+          "score": 56.22696,
+          "law_id": "LTTPHS_2025",
+          "article_number": "6",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LTTPHS_2025_D6_K2",
+          "score": 54.595306,
+          "law_id": "LTTPHS_2025",
+          "article_number": "6",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LTTPHS_2025_D21_K1_DA",
+          "score": 51.352306,
+          "law_id": "LTTPHS_2025",
+          "article_number": "21",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LTTPHS_2025_D31_K1_DA",
+          "score": 51.062405,
+          "law_id": "LTTPHS_2025",
+          "article_number": "31",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LTTPHS_2025_D18_K1",
+          "score": 48.963814,
+          "law_id": "LTTPHS_2025",
+          "article_number": "18",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LTTPHS_2025_D20_K1_DC",
+          "score": 48.728928,
+          "law_id": "LTTPHS_2025",
+          "article_number": "20",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LTTPHS_2025_D36",
+          "score": 39.9554,
+          "law_id": "LTTPHS_2025",
+          "article_number": "36",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LTTPHS_2025_D17_K1",
+          "score": 39.669655,
+          "law_id": "LTTPHS_2025",
+          "article_number": "17",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LTTPHS_2025_D1",
+          "score": 39.3469,
+          "law_id": "LTTPHS_2025",
+          "article_number": "1",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LTTPHS_2025_D3_K5",
+          "score": 38.801476,
+          "law_id": "LTTPHS_2025",
+          "article_number": "3",
+          "clause_number": "5",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_039",
+      "query": "Theo Luật Tương trợ tư pháp về hình sự 2025, hồ sơ yêu cầu của Việt Nam gồm văn bản yêu cầu và tài liệu nào khác?",
+      "search_law_id": "LTTPHS_2025",
+      "relevant_chunk_ids": [
+        "LTTPHS_2025_D19_K1_DA",
+        "LTTPHS_2025_D19_K1_DB"
+      ],
+      "retrieved_chunk_ids": [
+        "LTTPHS_2025_D19_K1_DB",
+        "LTTPHS_2025_D27_K1_DB",
+        "LTTPHS_2025_D19_K1_DA",
+        "LTTPHS_2025_D27_K1_DA",
+        "LTTPHS_2025_D19_K2",
+        "LTTPHS_2025_D8_K2",
+        "LTTPHS_2025_D8_K3",
+        "LTTPHS_2025_D29_K2",
+        "LTTPHS_2025_D8_K1",
+        "LTTPHS_2025_D13_K1"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.008911500015528873,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 0.5,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LTTPHS_2025_D19_K1_DB",
+          "score": 69.31012,
+          "law_id": "LTTPHS_2025",
+          "article_number": "19",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LTTPHS_2025_D27_K1_DB",
+          "score": 67.72636,
+          "law_id": "LTTPHS_2025",
+          "article_number": "27",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LTTPHS_2025_D19_K1_DA",
+          "score": 65.97727,
+          "law_id": "LTTPHS_2025",
+          "article_number": "19",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LTTPHS_2025_D27_K1_DA",
+          "score": 63.737892,
+          "law_id": "LTTPHS_2025",
+          "article_number": "27",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LTTPHS_2025_D19_K2",
+          "score": 60.00015,
+          "law_id": "LTTPHS_2025",
+          "article_number": "19",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LTTPHS_2025_D8_K2",
+          "score": 59.013424,
+          "law_id": "LTTPHS_2025",
+          "article_number": "8",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LTTPHS_2025_D8_K3",
+          "score": 58.85167,
+          "law_id": "LTTPHS_2025",
+          "article_number": "8",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LTTPHS_2025_D29_K2",
+          "score": 57.767696,
+          "law_id": "LTTPHS_2025",
+          "article_number": "29",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LTTPHS_2025_D8_K1",
+          "score": 55.154964,
+          "law_id": "LTTPHS_2025",
+          "article_number": "8",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LTTPHS_2025_D13_K1",
+          "score": 54.19602,
+          "law_id": "LTTPHS_2025",
+          "article_number": "13",
+          "clause_number": "1",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_040",
+      "query": "Nếu Việt Nam và nước ngoài không cùng điều ước quốc tế thì hồ sơ yêu cầu phải kèm bản dịch sang ngôn ngữ nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LTTPHS_2025_D8_K2"
+      ],
+      "retrieved_chunk_ids": [
+        "LTTPHS_2025_D8_K2",
+        "BLTTDS_2015_D437_K2",
+        "LTTPHS_2025_D8_K1",
+        "LTTPHS_2025_D29_K2",
+        "BLTTDS_2015_D446_K1",
+        "LTTPHS_2025_D21_K3",
+        "BLTTDS_2015_D434_K1_DC",
+        "BLTTDS_2015_D434_K1_DD",
+        "BLTTDS_2015_D434_K1_DA",
+        "BLTTDS_2015_D434_K1_DB"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.009072899993043393,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LTTPHS_2025_D8_K2",
+          "score": 79.10933,
+          "law_id": "LTTPHS_2025",
+          "article_number": "8",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "BLTTDS_2015_D437_K2",
+          "score": 73.21137,
+          "law_id": "BLTTDS_2015",
+          "article_number": "437",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LTTPHS_2025_D8_K1",
+          "score": 69.13483,
+          "law_id": "LTTPHS_2025",
+          "article_number": "8",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LTTPHS_2025_D29_K2",
+          "score": 61.55178,
+          "law_id": "LTTPHS_2025",
+          "article_number": "29",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "BLTTDS_2015_D446_K1",
+          "score": 53.46539,
+          "law_id": "BLTTDS_2015",
+          "article_number": "446",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LTTPHS_2025_D21_K3",
+          "score": 52.24694,
+          "law_id": "LTTPHS_2025",
+          "article_number": "21",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "BLTTDS_2015_D434_K1_DC",
+          "score": 51.507603,
+          "law_id": "BLTTDS_2015",
+          "article_number": "434",
+          "clause_number": "1",
+          "point_number": "c"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "BLTTDS_2015_D434_K1_DD",
+          "score": 51.094936,
+          "law_id": "BLTTDS_2015",
+          "article_number": "434",
+          "clause_number": "1",
+          "point_number": "d"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "BLTTDS_2015_D434_K1_DA",
+          "score": 51.059536,
+          "law_id": "BLTTDS_2015",
+          "article_number": "434",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "BLTTDS_2015_D434_K1_DB",
+          "score": 50.609085,
+          "law_id": "BLTTDS_2015",
+          "article_number": "434",
+          "clause_number": "1",
+          "point_number": "b"
+        }
+      ]
+    },
+    {
+      "id": "eval_041",
+      "query": "Theo Luật Tương trợ tư pháp về hình sự 2025, Viện kiểm sát nhân dân tối cao kiểm tra tính hợp lệ của hồ sơ yêu cầu trong bao lâu?",
+      "search_law_id": "LTTPHS_2025",
+      "relevant_chunk_ids": [
+        "LTTPHS_2025_D21_K3"
+      ],
+      "retrieved_chunk_ids": [
+        "LTTPHS_2025_D29_K1",
+        "LTTPHS_2025_D21_K3",
+        "LTTPHS_2025_D38_K1_DA",
+        "LTTPHS_2025_D38_K1_DB",
+        "LTTPHS_2025_D29_K2",
+        "LTTPHS_2025_D29_K3",
+        "LTTPHS_2025_D21_K2",
+        "LTTPHS_2025_D36",
+        "LTTPHS_2025_D21_K5",
+        "LTTPHS_2025_D21_K6"
+      ],
+      "first_relevant_rank": 2,
+      "latency_seconds": 0.00790140000754036,
+      "metrics": {
+        "hit@1": 0.0,
+        "recall@1": 0.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 0.5
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LTTPHS_2025_D29_K1",
+          "score": 93.32376,
+          "law_id": "LTTPHS_2025",
+          "article_number": "29",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LTTPHS_2025_D21_K3",
+          "score": 88.86693,
+          "law_id": "LTTPHS_2025",
+          "article_number": "21",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LTTPHS_2025_D38_K1_DA",
+          "score": 81.733284,
+          "law_id": "LTTPHS_2025",
+          "article_number": "38",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LTTPHS_2025_D38_K1_DB",
+          "score": 81.45962,
+          "law_id": "LTTPHS_2025",
+          "article_number": "38",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LTTPHS_2025_D29_K2",
+          "score": 78.858505,
+          "law_id": "LTTPHS_2025",
+          "article_number": "29",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LTTPHS_2025_D29_K3",
+          "score": 75.186386,
+          "law_id": "LTTPHS_2025",
+          "article_number": "29",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LTTPHS_2025_D21_K2",
+          "score": 72.71805,
+          "law_id": "LTTPHS_2025",
+          "article_number": "21",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LTTPHS_2025_D36",
+          "score": 70.560974,
+          "law_id": "LTTPHS_2025",
+          "article_number": "36",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LTTPHS_2025_D21_K5",
+          "score": 69.86077,
+          "law_id": "LTTPHS_2025",
+          "article_number": "21",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LTTPHS_2025_D21_K6",
+          "score": 69.66809,
+          "law_id": "LTTPHS_2025",
+          "article_number": "21",
+          "clause_number": "6",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_042",
+      "query": "Khi triệu tập người làm chứng từ Việt Nam sang nước yêu cầu, văn bản yêu cầu phải gửi trước bao lâu?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LTTPHS_2025_D32_K1"
+      ],
+      "retrieved_chunk_ids": [
+        "LTTPHS_2025_D32_K1",
+        "LTTPHS_2025_D32_K2_DB",
+        "BLTTDS_2015_D434_K1_DD",
+        "LTTPHS_2025_D32_K3",
+        "BLTTDS_2015_D167_K2",
+        "BLTTDS_2015_D458_K5",
+        "BLTTDS_2015_D438_K5",
+        "BLTTDS_2015_D78_K6",
+        "BLTTDS_2015_D414_K6",
+        "BLTTDS_2015_D437_K2"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.010167499975068495,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LTTPHS_2025_D32_K1",
+          "score": 53.309216,
+          "law_id": "LTTPHS_2025",
+          "article_number": "32",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LTTPHS_2025_D32_K2_DB",
+          "score": 36.255234,
+          "law_id": "LTTPHS_2025",
+          "article_number": "32",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "BLTTDS_2015_D434_K1_DD",
+          "score": 34.340435,
+          "law_id": "BLTTDS_2015",
+          "article_number": "434",
+          "clause_number": "1",
+          "point_number": "d"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LTTPHS_2025_D32_K3",
+          "score": 32.54313,
+          "law_id": "LTTPHS_2025",
+          "article_number": "32",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "BLTTDS_2015_D167_K2",
+          "score": 32.419456,
+          "law_id": "BLTTDS_2015",
+          "article_number": "167",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "BLTTDS_2015_D458_K5",
+          "score": 29.778435,
+          "law_id": "BLTTDS_2015",
+          "article_number": "458",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "BLTTDS_2015_D438_K5",
+          "score": 29.456133,
+          "law_id": "BLTTDS_2015",
+          "article_number": "438",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "BLTTDS_2015_D78_K6",
+          "score": 28.485733,
+          "law_id": "BLTTDS_2015",
+          "article_number": "78",
+          "clause_number": "6",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "BLTTDS_2015_D414_K6",
+          "score": 28.287039,
+          "law_id": "BLTTDS_2015",
+          "article_number": "414",
+          "clause_number": "6",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "BLTTDS_2015_D437_K2",
+          "score": 27.933199,
+          "law_id": "BLTTDS_2015",
+          "article_number": "437",
+          "clause_number": "2",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_043",
+      "query": "Theo Luật Xây dựng 2014, Luật này quy định về quyền, nghĩa vụ và quản lý nhà nước trong hoạt động nào?",
+      "search_law_id": "LXD_2014",
+      "relevant_chunk_ids": [
+        "LXD_2014_D1"
+      ],
+      "retrieved_chunk_ids": [
+        "LXD_2014_D1",
+        "LXD_2014_D163_K1_DA",
+        "LXD_2014_D70_K2_DA",
+        "LXD_2014_D164_K1_DA",
+        "LXD_2014_D160_K5",
+        "LXD_2014_D148_K2",
+        "LXD_2014_D160_K10",
+        "LXD_2014_D161_K1",
+        "LXD_2014_D68_K2_DDD",
+        "LXD_2014_D160_K4"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.008452800015220419,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LXD_2014_D1",
+          "score": 35.478638,
+          "law_id": "LXD_2014",
+          "article_number": "1",
+          "clause_number": null,
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LXD_2014_D163_K1_DA",
+          "score": 32.046574,
+          "law_id": "LXD_2014",
+          "article_number": "163",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LXD_2014_D70_K2_DA",
+          "score": 31.210209,
+          "law_id": "LXD_2014",
+          "article_number": "70",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LXD_2014_D164_K1_DA",
+          "score": 30.02605,
+          "law_id": "LXD_2014",
+          "article_number": "164",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LXD_2014_D160_K5",
+          "score": 28.301811,
+          "law_id": "LXD_2014",
+          "article_number": "160",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LXD_2014_D148_K2",
+          "score": 27.809124,
+          "law_id": "LXD_2014",
+          "article_number": "148",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LXD_2014_D160_K10",
+          "score": 27.424356,
+          "law_id": "LXD_2014",
+          "article_number": "160",
+          "clause_number": "10",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LXD_2014_D161_K1",
+          "score": 27.392162,
+          "law_id": "LXD_2014",
+          "article_number": "161",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LXD_2014_D68_K2_DDD",
+          "score": 27.283615,
+          "law_id": "LXD_2014",
+          "article_number": "68",
+          "clause_number": "2",
+          "point_number": "đ"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LXD_2014_D160_K4",
+          "score": 27.138615,
+          "law_id": "LXD_2014",
+          "article_number": "160",
+          "clause_number": "4",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_044",
+      "query": "Chủ đầu tư phải mua bảo hiểm công trình trong thời gian xây dựng đối với loại công trình nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LXD_2014_D9_K2_DA"
+      ],
+      "retrieved_chunk_ids": [
+        "LXD_2014_D9_K2_DA",
+        "LXD_2014_D9_K2_DB",
+        "LXD_2014_D9_K1_DA",
+        "LNO_2023_D153_K1_DA",
+        "LXD_2014_D9_K2_DC",
+        "LXD_2014_D9_K3",
+        "LKDBDS_2023_D14_K3_DDD",
+        "LKDBDS_2023_D14_K3_DC",
+        "LXD_2014_D102_K1_DE",
+        "LKDBDS_2023_D14_K3_DE"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.009223900007782504,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LXD_2014_D9_K2_DA",
+          "score": 46.56446,
+          "law_id": "LXD_2014",
+          "article_number": "9",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LXD_2014_D9_K2_DB",
+          "score": 36.638573,
+          "law_id": "LXD_2014",
+          "article_number": "9",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LXD_2014_D9_K1_DA",
+          "score": 36.366516,
+          "law_id": "LXD_2014",
+          "article_number": "9",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LNO_2023_D153_K1_DA",
+          "score": 34.88153,
+          "law_id": "LNO_2023",
+          "article_number": "153",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LXD_2014_D9_K2_DC",
+          "score": 34.54158,
+          "law_id": "LXD_2014",
+          "article_number": "9",
+          "clause_number": "2",
+          "point_number": "c"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LXD_2014_D9_K3",
+          "score": 34.447777,
+          "law_id": "LXD_2014",
+          "article_number": "9",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LKDBDS_2023_D14_K3_DDD",
+          "score": 32.113464,
+          "law_id": "LKDBDS_2023",
+          "article_number": "14",
+          "clause_number": "3",
+          "point_number": "đ"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LKDBDS_2023_D14_K3_DC",
+          "score": 31.906506,
+          "law_id": "LKDBDS_2023",
+          "article_number": "14",
+          "clause_number": "3",
+          "point_number": "c"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LXD_2014_D102_K1_DE",
+          "score": 30.58046,
+          "law_id": "LXD_2014",
+          "article_number": "102",
+          "clause_number": "1",
+          "point_number": "e"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LKDBDS_2023_D14_K3_DE",
+          "score": 30.439714,
+          "law_id": "LKDBDS_2023",
+          "article_number": "14",
+          "clause_number": "3",
+          "point_number": "e"
+        }
+      ]
+    },
+    {
+      "id": "eval_045",
+      "query": "Theo Luật Xây dựng 2014, khởi công xây dựng công trình khi chưa đủ điều kiện có bị cấm không?",
+      "search_law_id": "LXD_2014",
+      "relevant_chunk_ids": [
+        "LXD_2014_D12_K2"
+      ],
+      "retrieved_chunk_ids": [
+        "LXD_2014_D12_K2",
+        "LXD_2014_D12_K6",
+        "LXD_2014_D94_K1_DD",
+        "LXD_2014_D12_K7",
+        "LXD_2014_D99_K1",
+        "LXD_2014_D107_K1_DB",
+        "LXD_2014_D12_K4",
+        "LXD_2014_D107_K1_DA",
+        "LXD_2014_D107_K1_DD",
+        "LXD_2014_D107_K1_DC"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.01044230000115931,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LXD_2014_D12_K2",
+          "score": 45.124527,
+          "law_id": "LXD_2014",
+          "article_number": "12",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LXD_2014_D12_K6",
+          "score": 30.37192,
+          "law_id": "LXD_2014",
+          "article_number": "12",
+          "clause_number": "6",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LXD_2014_D94_K1_DD",
+          "score": 28.18964,
+          "law_id": "LXD_2014",
+          "article_number": "94",
+          "clause_number": "1",
+          "point_number": "d"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LXD_2014_D12_K7",
+          "score": 27.426321,
+          "law_id": "LXD_2014",
+          "article_number": "12",
+          "clause_number": "7",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LXD_2014_D99_K1",
+          "score": 26.234308,
+          "law_id": "LXD_2014",
+          "article_number": "99",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LXD_2014_D107_K1_DB",
+          "score": 25.635197,
+          "law_id": "LXD_2014",
+          "article_number": "107",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LXD_2014_D12_K4",
+          "score": 25.630848,
+          "law_id": "LXD_2014",
+          "article_number": "12",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LXD_2014_D107_K1_DA",
+          "score": 25.423695,
+          "law_id": "LXD_2014",
+          "article_number": "107",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LXD_2014_D107_K1_DD",
+          "score": 24.82909,
+          "law_id": "LXD_2014",
+          "article_number": "107",
+          "clause_number": "1",
+          "point_number": "d"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LXD_2014_D107_K1_DC",
+          "score": 24.735832,
+          "law_id": "LXD_2014",
+          "article_number": "107",
+          "clause_number": "1",
+          "point_number": "c"
+        }
+      ]
+    },
+    {
+      "id": "eval_046",
+      "query": "Công trình hoàn thành chỉ được đưa vào khai thác sau khi đáp ứng yêu cầu nghiệm thu nào?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LXD_2014_D123_K2"
+      ],
+      "retrieved_chunk_ids": [
+        "LXD_2014_D123_K2",
+        "LXD_2014_D111_K5",
+        "LXD_2014_D123_K1_DB",
+        "LKDBDS_2023_D14_K2_DB",
+        "LKDBDS_2023_D6_K3_DB",
+        "LKDBDS_2023_D24_K3_DC",
+        "LKDBDS_2023_D27_K2_DA",
+        "LKDBDS_2023_D29_K1_DB",
+        "LNO_2023_D37_K4",
+        "LNO_2023_D33_K1_DDD"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.009000199992442504,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LXD_2014_D123_K2",
+          "score": 54.28089,
+          "law_id": "LXD_2014",
+          "article_number": "123",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LXD_2014_D111_K5",
+          "score": 49.202156,
+          "law_id": "LXD_2014",
+          "article_number": "111",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LXD_2014_D123_K1_DB",
+          "score": 45.746803,
+          "law_id": "LXD_2014",
+          "article_number": "123",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LKDBDS_2023_D14_K2_DB",
+          "score": 40.70782,
+          "law_id": "LKDBDS_2023",
+          "article_number": "14",
+          "clause_number": "2",
+          "point_number": "b"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LKDBDS_2023_D6_K3_DB",
+          "score": 37.30279,
+          "law_id": "LKDBDS_2023",
+          "article_number": "6",
+          "clause_number": "3",
+          "point_number": "b"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LKDBDS_2023_D24_K3_DC",
+          "score": 37.02341,
+          "law_id": "LKDBDS_2023",
+          "article_number": "24",
+          "clause_number": "3",
+          "point_number": "c"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LKDBDS_2023_D27_K2_DA",
+          "score": 36.19877,
+          "law_id": "LKDBDS_2023",
+          "article_number": "27",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LKDBDS_2023_D29_K1_DB",
+          "score": 35.347355,
+          "law_id": "LKDBDS_2023",
+          "article_number": "29",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LNO_2023_D37_K4",
+          "score": 33.991108,
+          "law_id": "LNO_2023",
+          "article_number": "37",
+          "clause_number": "4",
+          "point_number": null
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LNO_2023_D33_K1_DDD",
+          "score": 33.66309,
+          "law_id": "LNO_2023",
+          "article_number": "33",
+          "clause_number": "1",
+          "point_number": "đ"
+        }
+      ]
+    },
+    {
+      "id": "eval_047",
+      "query": "Theo Luật Xây dựng 2014, nghiệm thu công trình xây dựng bao gồm nghiệm thu công việc và nghiệm thu hoàn thành gì?",
+      "search_law_id": "LXD_2014",
+      "relevant_chunk_ids": [
+        "LXD_2014_D123_K1_DA",
+        "LXD_2014_D123_K1_DB"
+      ],
+      "retrieved_chunk_ids": [
+        "LXD_2014_D123_K1_DB",
+        "LXD_2014_D111_K5",
+        "LXD_2014_D123_K2",
+        "LXD_2014_D122_K1_DA",
+        "LXD_2014_D120_K2_DA",
+        "LXD_2014_D123_K4_DA",
+        "LXD_2014_D123_K4_DB",
+        "LXD_2014_D147_K2",
+        "LXD_2014_D123_K1_DA",
+        "LXD_2014_D144_K5"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.022702099988237023,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 0.5,
+        "hit@3": 1.0,
+        "recall@3": 0.5,
+        "hit@5": 1.0,
+        "recall@5": 0.5,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LXD_2014_D123_K1_DB",
+          "score": 40.43335,
+          "law_id": "LXD_2014",
+          "article_number": "123",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LXD_2014_D111_K5",
+          "score": 35.04252,
+          "law_id": "LXD_2014",
+          "article_number": "111",
+          "clause_number": "5",
+          "point_number": null
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LXD_2014_D123_K2",
+          "score": 34.702766,
+          "law_id": "LXD_2014",
+          "article_number": "123",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LXD_2014_D122_K1_DA",
+          "score": 33.537476,
+          "law_id": "LXD_2014",
+          "article_number": "122",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LXD_2014_D120_K2_DA",
+          "score": 33.498436,
+          "law_id": "LXD_2014",
+          "article_number": "120",
+          "clause_number": "2",
+          "point_number": "a"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LXD_2014_D123_K4_DA",
+          "score": 33.25785,
+          "law_id": "LXD_2014",
+          "article_number": "123",
+          "clause_number": "4",
+          "point_number": "a"
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LXD_2014_D123_K4_DB",
+          "score": 32.650673,
+          "law_id": "LXD_2014",
+          "article_number": "123",
+          "clause_number": "4",
+          "point_number": "b"
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LXD_2014_D147_K2",
+          "score": 31.97744,
+          "law_id": "LXD_2014",
+          "article_number": "147",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LXD_2014_D123_K1_DA",
+          "score": 31.108917,
+          "law_id": "LXD_2014",
+          "article_number": "123",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LXD_2014_D144_K5",
+          "score": 29.445436,
+          "law_id": "LXD_2014",
+          "article_number": "144",
+          "clause_number": "5",
+          "point_number": null
+        }
+      ]
+    },
+    {
+      "id": "eval_048",
+      "query": "Khi bàn giao công trình, nhà thầu thi công phải giao những tài liệu vận hành và bảo trì nào cho chủ đầu tư?",
+      "search_law_id": null,
+      "relevant_chunk_ids": [
+        "LXD_2014_D124_K3"
+      ],
+      "retrieved_chunk_ids": [
+        "LXD_2014_D124_K3",
+        "LNO_2023_D153_K1_DA",
+        "LNO_2023_D158_K2",
+        "LNO_2023_D154_K3",
+        "LNO_2023_D153_K1_DB",
+        "LNO_2023_D37_K3",
+        "LNO_2023_D157_K3",
+        "LNO_2023_D158_K1",
+        "LXD_2014_D119_K1_DA",
+        "LNO_2023_D198_K4_DA"
+      ],
+      "first_relevant_rank": 1,
+      "latency_seconds": 0.022413099999539554,
+      "metrics": {
+        "hit@1": 1.0,
+        "recall@1": 1.0,
+        "hit@3": 1.0,
+        "recall@3": 1.0,
+        "hit@5": 1.0,
+        "recall@5": 1.0,
+        "hit@10": 1.0,
+        "recall@10": 1.0,
+        "mrr@10": 1.0
+      },
+      "results": [
+        {
+          "rank": 1,
+          "chunk_id": "LXD_2014_D124_K3",
+          "score": 58.128872,
+          "law_id": "LXD_2014",
+          "article_number": "124",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 2,
+          "chunk_id": "LNO_2023_D153_K1_DA",
+          "score": 45.84093,
+          "law_id": "LNO_2023",
+          "article_number": "153",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 3,
+          "chunk_id": "LNO_2023_D158_K2",
+          "score": 40.37493,
+          "law_id": "LNO_2023",
+          "article_number": "158",
+          "clause_number": "2",
+          "point_number": null
+        },
+        {
+          "rank": 4,
+          "chunk_id": "LNO_2023_D154_K3",
+          "score": 39.18923,
+          "law_id": "LNO_2023",
+          "article_number": "154",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 5,
+          "chunk_id": "LNO_2023_D153_K1_DB",
+          "score": 37.838783,
+          "law_id": "LNO_2023",
+          "article_number": "153",
+          "clause_number": "1",
+          "point_number": "b"
+        },
+        {
+          "rank": 6,
+          "chunk_id": "LNO_2023_D37_K3",
+          "score": 36.576202,
+          "law_id": "LNO_2023",
+          "article_number": "37",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 7,
+          "chunk_id": "LNO_2023_D157_K3",
+          "score": 36.520836,
+          "law_id": "LNO_2023",
+          "article_number": "157",
+          "clause_number": "3",
+          "point_number": null
+        },
+        {
+          "rank": 8,
+          "chunk_id": "LNO_2023_D158_K1",
+          "score": 36.311386,
+          "law_id": "LNO_2023",
+          "article_number": "158",
+          "clause_number": "1",
+          "point_number": null
+        },
+        {
+          "rank": 9,
+          "chunk_id": "LXD_2014_D119_K1_DA",
+          "score": 36.285744,
+          "law_id": "LXD_2014",
+          "article_number": "119",
+          "clause_number": "1",
+          "point_number": "a"
+        },
+        {
+          "rank": 10,
+          "chunk_id": "LNO_2023_D198_K4_DA",
+          "score": 35.988365,
+          "law_id": "LNO_2023",
+          "article_number": "198",
+          "clause_number": "4",
+          "point_number": "a"
+        }
+      ]
+    }
+  ]
+}
