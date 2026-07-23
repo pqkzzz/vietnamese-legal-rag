@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0",
+  "laws": [
+    {
+      "law_id": "BLTTDS_2015",
+      "official_title": "Bộ luật Tố tụng dân sự 2015",
+      "full_name": "Bộ luật Tố tụng dân sự 2015 (Văn bản hợp nhất 99/VBHN-VPQH 2025)",
+      "document_number": "99/VBHN-VPQH",
+      "document_type": "Văn bản hợp nhất",
+      "issued_year": 2025,
+      "aliases": [
+        "blttds",
+        "blttds 2015",
+        "blttds_2015",
+        "99/VBHN-VPQH",
+        "t? t?ng d?n s?",
+        "Bộ luật Tố tụng dân sự",
+        "b? lu?t t? t?ng d?n s?",
+        "bộ luật tố tụng dân sự",
+        "Bộ luật Tố tụng dân sự 2015",
+        "bộ luật tố tụng dân sự 2015",
+        "Bộ luật Tố tụng dân sự 2015 (Văn bản hợp nhất 99/VBHN-VPQH 2025)"
+      ],
+      "abbreviations": [
+        "blttds",
+        "blttds 2015",
+        "b? lu?t t? t?ng d?n s?"
+      ],
+      "domain": "civil_procedure"
+    },
+    {
+      "law_id": "LBVMT_2020",
+      "official_title": "Luật Bảo vệ môi trường 2020",
+      "full_name": "Luật Bảo vệ môi trường 2020 (Văn bản hợp nhất 15/VBHN-VPQH 2025)",
+      "document_number": "15/VBHN-VPQH",
+      "document_type": "Văn bản hợp nhất",
+      "issued_year": 2025,
+      "aliases": [
+        "lbvmt",
+        "lbvmt 2020",
+        "lbvmt_2020",
+        "15/VBHN-VPQH",
+        "b?o v? m?i tr??ng",
+        "Luật Bảo vệ môi trường",
+        "lu?t b?o v? m?i tr??ng",
+        "luật bảo vệ môi trường",
+        "Luật Bảo vệ môi trường 2020",
+        "luật bảo vệ môi trường 2020",
+        "Luật Bảo vệ môi trường 2020 (Văn bản hợp nhất 15/VBHN-VPQH 2025)"
+      ],
+      "abbreviations": [
+        "lbvmt",
+        "lbvmt 2020",
+        "lu?t b?o v? m?i tr??ng"
+      ],
+      "domain": "environment"
+    },
+    {
+      "law_id": "LCC_2024",
+      "official_title": "Luật Công chứng 2024",
+      "full_name": "Luật Công chứng 2024 (Văn bản hợp nhất 50/VBHN-VPQH 2026)",
+      "document_number": "50/VBHN-VPQH",
+      "document_type": "Văn bản hợp nhất",
+      "issued_year": 2026,
+      "aliases": [
+        "lcc",
+        "lcc 2024",
+        "lcc_2024",
+        "c?ng ch?ng",
+        "50/VBHN-VPQH",
+        "Luật Công chứng",
+        "lu?t c?ng ch?ng",
+        "luật công chứng",
+        "Luật Công chứng 2024",
+        "luật công chứng 2024",
+        "Luật Công chứng 2024 (Văn bản hợp nhất 50/VBHN-VPQH 2026)"
+      ],
+      "abbreviations": [
+        "lcc",
+        "lcc 2024",
+        "lu?t c?ng ch?ng"
+      ],
+      "domain": "notarization"
+    },
+    {
+      "law_id": "LDD_2024",
+      "official_title": "Luật Đất đai 2024",
+      "full_name": "Luật Đất đai 2024 (Văn bản hợp nhất 45/VBHN-VPQH 2025)",
+      "document_number": "45/VBHN-VPQH",
+      "document_type": "Văn bản hợp nhất",
+      "issued_year": 2025,
+      "aliases": [
+        "l??",
+        "ldd",
+        "??t ?ai",
+        "l?? 2024",
+        "ldd 2024",
+        "ldd_2024",
+        "45/VBHN-VPQH",
+        "Luật Đất đai",
+        "lu?t ??t ?ai",
+        "luật đất đai",
+        "Luật Đất đai 2024",
+        "luật đất đai 2024",
+        "Luật Đất đai 2024 (Văn bản hợp nhất 45/VBHN-VPQH 2025)"
+      ],
+      "abbreviations": [
+        "l??",
+        "ldd",
+        "l?? 2024"
+      ],
+      "domain": "land"
+    },
+    {
+      "law_id": "LKDBDS_2023",
+      "official_title": "Luật Kinh doanh bất động sản 2023",
+      "full_name": "Luật Kinh doanh bất động sản 2023 (Văn bản hợp nhất 06/VBHN-VPQH 2025)",
+      "document_number": "06/VBHN-VPQH",
+      "document_type": "Văn bản hợp nhất",
+      "issued_year": 2025,
+      "aliases": [
+        "lkdbds",
+        "lkdbds 2023",
+        "lkdbds_2023",
+        "06/VBHN-VPQH",
+        "kinh doanh b?t ??ng s?n",
+        "Luật Kinh doanh bất động sản",
+        "lu?t kinh doanh b?t ??ng s?n",
+        "luật kinh doanh bất động sản",
+        "Luật Kinh doanh bất động sản 2023",
+        "luật kinh doanh bất động sản 2023",
+        "Luật Kinh doanh bất động sản 2023 (Văn bản hợp nhất 06/VBHN-VPQH 2025)"
+      ],
+      "abbreviations": [
+        "lkdbds",
+        "lkdbds 2023",
+        "lu?t kinh doanh b?t ??ng s?n"
+      ],
+      "domain": "real_estate_business"
+    },
+    {
+      "law_id": "LNO_2023",
+      "official_title": "Luật Nhà ở 2023",
+      "full_name": "Luật Nhà ở 2023 (Văn bản hợp nhất 132/VBHN-VPQH 2025)",
+      "document_number": "132/VBHN-VPQH",
+      "document_type": "Văn bản hợp nhất",
+      "issued_year": 2025,
+      "aliases": [
+        "lno",
+        "nh? ?",
+        "lno 2023",
+        "lno_2023",
+        "Luật Nhà ở",
+        "lu?t nh? ?",
+        "luật nhà ở",
+        "132/VBHN-VPQH",
+        "Luật Nhà ở 2023",
+        "luật nhà ở 2023",
+        "Luật Nhà ở 2023 (Văn bản hợp nhất 132/VBHN-VPQH 2025)"
+      ],
+      "abbreviations": [
+        "lno",
+        "lno 2023",
+        "lu?t nh? ?"
+      ],
+      "domain": "housing"
+    },
+    {
+      "law_id": "LTTPHS_2025",
+      "official_title": "Luật Tương trợ tư pháp về hình sự 2025",
+      "full_name": "Luật Tương trợ tư pháp về hình sự 2025",
+      "document_number": "103/2025/QH15",
+      "document_type": null,
+      "issued_year": 2025,
+      "aliases": [
+        "lttphs",
+        "lttphs 2025",
+        "lttphs_2025",
+        "103/2025/QH15",
+        "t??ng tr? t? ph?p h?nh s?",
+        "t??ng tr? t? ph?p v? h?nh s?",
+        "Luật Tương trợ tư pháp về hình sự",
+        "lu?t t??ng tr? t? ph?p v? h?nh s?",
+        "luật tương trợ tư pháp về hình sự",
+        "Luật Tương trợ tư pháp về hình sự 2025",
+        "luật tương trợ tư pháp về hình sự 2025"
+      ],
+      "abbreviations": [
+        "lttphs",
+        "lttphs 2025",
+        "lu?t t??ng tr? t? ph?p v? h?nh s?"
+      ],
+      "domain": "criminal_mutual_legal_assistance"
+    },
+    {
+      "law_id": "LXD_2014",
+      "official_title": "Luật Xây dựng 2014",
+      "full_name": "Luật Xây dựng 2014 (Văn bản hợp nhất 43/VBHN-VPQH 2025)",
+      "document_number": "43/VBHN-VPQH",
+      "document_type": "Văn bản hợp nhất",
+      "issued_year": 2025,
+      "aliases": [
+        "lxd",
+        "lxd 2014",
+        "lxd_2014",
+        "x?y d?ng",
+        "43/VBHN-VPQH",
+        "Luật Xây dựng",
+        "lu?t x?y d?ng",
+        "luật xây dựng",
+        "Luật Xây dựng 2014",
+        "luật xây dựng 2014",
+        "Luật Xây dựng 2014 (Văn bản hợp nhất 43/VBHN-VPQH 2025)"
+      ],
+      "abbreviations": [
+        "lxd",
+        "lxd 2014",
+        "lu?t x?y d?ng"
+      ],
+      "domain": "construction"
+    }
+  ]
+}
