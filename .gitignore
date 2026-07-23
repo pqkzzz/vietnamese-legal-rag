@@ -3,3 +3,5 @@ models/*
 !models/.gitkeep
 .env
 .venv
+# FastEmbed local cache
+.cache/
