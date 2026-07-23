@@ -1,0 +1,13 @@
+{
+  "total_queries": 48,
+  "law_gold_count": 24,
+  "law_filter_accuracy_when_gold_present": 1.0,
+  "false_positive_law_filter_count": 0,
+  "citation_query_count": 1,
+  "route_distribution": {
+    "filtered_hybrid": 23,
+    "broad_hybrid": 24,
+    "exact_citation_lookup": 1
+  },
+  "mismatches_sample": []
+}
