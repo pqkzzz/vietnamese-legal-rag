@@ -1,0 +1,21 @@
+{
+  "law_id": "BLTTDS_2015",
+  "source_file": "BLTTDS_2015_normalized.json",
+  "output_file": "BLTTDS_2015_chunks.jsonl",
+  "input_units": 1523,
+  "output_chunks": 2174,
+  "article_chunks": 124,
+  "clause_chunks": 1193,
+  "parent_clause_chunks": 164,
+  "point_chunks": 693,
+  "article_leads_skipped": 42,
+  "repealed_chunks": 4,
+  "retrievable_chunks": 2006,
+  "non_retrievable_chunks": 168,
+  "clauses_split": 164,
+  "clauses_not_split": 1193,
+  "warning_count": 0,
+  "error_count": 0,
+  "warnings": [],
+  "errors": []
+}

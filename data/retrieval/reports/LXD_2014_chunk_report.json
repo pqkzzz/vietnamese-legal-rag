@@ -1,0 +1,21 @@
+{
+  "law_id": "LXD_2014",
+  "source_file": "LXD_2014_normalized.json",
+  "output_file": "LXD_2014_chunks.jsonl",
+  "input_units": 566,
+  "output_chunks": 1105,
+  "article_chunks": 3,
+  "clause_chunks": 427,
+  "parent_clause_chunks": 131,
+  "point_chunks": 544,
+  "article_leads_skipped": 5,
+  "repealed_chunks": 31,
+  "retrievable_chunks": 945,
+  "non_retrievable_chunks": 160,
+  "clauses_split": 131,
+  "clauses_not_split": 427,
+  "warning_count": 0,
+  "error_count": 0,
+  "warnings": [],
+  "errors": []
+}

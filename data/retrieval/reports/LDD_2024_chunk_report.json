@@ -1,0 +1,46 @@
+{
+  "law_id": "LDD_2024",
+  "source_file": "LDD_2024_normalized.json",
+  "output_file": "LDD_2024_chunks.jsonl",
+  "input_units": 1272,
+  "output_chunks": 2349,
+  "article_chunks": 16,
+  "clause_chunks": 974,
+  "parent_clause_chunks": 270,
+  "point_chunks": 1089,
+  "article_leads_skipped": 12,
+  "repealed_chunks": 0,
+  "retrievable_chunks": 2079,
+  "non_retrievable_chunks": 270,
+  "clauses_split": 270,
+  "clauses_not_split": 974,
+  "warning_count": 4,
+  "error_count": 0,
+  "warnings": [
+    {
+      "unit_id": "LDD_2024_D243_K2",
+      "field": "content_clean",
+      "code": "INVALID_POINT_SEQUENCE",
+      "message": "Point marker sequence is not in valid legal order."
+    },
+    {
+      "unit_id": "LDD_2024_D248_K6",
+      "field": "content_clean",
+      "code": "INVALID_POINT_SEQUENCE",
+      "message": "Point marker sequence is not in valid legal order."
+    },
+    {
+      "unit_id": "LDD_2024_D248_K7",
+      "field": "content_clean",
+      "code": "INVALID_POINT_SEQUENCE",
+      "message": "Point marker sequence is not in valid legal order."
+    },
+    {
+      "unit_id": "LDD_2024_D248_K8",
+      "field": "content_clean",
+      "code": "INVALID_POINT_SEQUENCE",
+      "message": "Point marker sequence is not in valid legal order."
+    }
+  ],
+  "errors": []
+}

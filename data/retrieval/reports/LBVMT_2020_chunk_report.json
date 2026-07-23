@@ -1,0 +1,21 @@
+{
+  "law_id": "LBVMT_2020",
+  "source_file": "LBVMT_2020_normalized.json",
+  "output_file": "LBVMT_2020_chunks.jsonl",
+  "input_units": 835,
+  "output_chunks": 1713,
+  "article_chunks": 2,
+  "clause_chunks": 614,
+  "parent_clause_chunks": 217,
+  "point_chunks": 880,
+  "article_leads_skipped": 2,
+  "repealed_chunks": 0,
+  "retrievable_chunks": 1496,
+  "non_retrievable_chunks": 217,
+  "clauses_split": 217,
+  "clauses_not_split": 614,
+  "warning_count": 0,
+  "error_count": 0,
+  "warnings": [],
+  "errors": []
+}

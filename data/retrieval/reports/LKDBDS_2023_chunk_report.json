@@ -1,0 +1,21 @@
+{
+  "law_id": "LKDBDS_2023",
+  "source_file": "LKDBDS_2023_normalized.json",
+  "output_file": "LKDBDS_2023_chunks.jsonl",
+  "input_units": 349,
+  "output_chunks": 733,
+  "article_chunks": 3,
+  "clause_chunks": 273,
+  "parent_clause_chunks": 72,
+  "point_chunks": 385,
+  "article_leads_skipped": 1,
+  "repealed_chunks": 0,
+  "retrievable_chunks": 661,
+  "non_retrievable_chunks": 72,
+  "clauses_split": 72,
+  "clauses_not_split": 273,
+  "warning_count": 0,
+  "error_count": 0,
+  "warnings": [],
+  "errors": []
+}

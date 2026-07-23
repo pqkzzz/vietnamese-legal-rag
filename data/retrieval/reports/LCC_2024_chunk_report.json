@@ -1,0 +1,21 @@
+{
+  "law_id": "LCC_2024",
+  "source_file": "LCC_2024_normalized.json",
+  "output_file": "LCC_2024_chunks.jsonl",
+  "input_units": 287,
+  "output_chunks": 426,
+  "article_chunks": 7,
+  "clause_chunks": 243,
+  "parent_clause_chunks": 35,
+  "point_chunks": 141,
+  "article_leads_skipped": 2,
+  "repealed_chunks": 0,
+  "retrievable_chunks": 391,
+  "non_retrievable_chunks": 35,
+  "clauses_split": 35,
+  "clauses_not_split": 243,
+  "warning_count": 0,
+  "error_count": 0,
+  "warnings": [],
+  "errors": []
+}

@@ -1,0 +1,21 @@
+{
+  "law_id": "LTTPHS_2025",
+  "source_file": "LTTPHS_2025_normalized.json",
+  "output_file": "LTTPHS_2025_chunks.jsonl",
+  "input_units": 134,
+  "output_chunks": 197,
+  "article_chunks": 6,
+  "clause_chunks": 109,
+  "parent_clause_chunks": 16,
+  "point_chunks": 66,
+  "article_leads_skipped": 3,
+  "repealed_chunks": 0,
+  "retrievable_chunks": 181,
+  "non_retrievable_chunks": 16,
+  "clauses_split": 16,
+  "clauses_not_split": 109,
+  "warning_count": 0,
+  "error_count": 0,
+  "warnings": [],
+  "errors": []
+}

@@ -1,0 +1,21 @@
+{
+  "law_id": "LNO_2023",
+  "source_file": "LNO_2023_normalized.json",
+  "output_file": "LNO_2023_chunks.jsonl",
+  "input_units": 790,
+  "output_chunks": 1394,
+  "article_chunks": 7,
+  "clause_chunks": 624,
+  "parent_clause_chunks": 154,
+  "point_chunks": 609,
+  "article_leads_skipped": 5,
+  "repealed_chunks": 4,
+  "retrievable_chunks": 1237,
+  "non_retrievable_chunks": 157,
+  "clauses_split": 154,
+  "clauses_not_split": 624,
+  "warning_count": 0,
+  "error_count": 0,
+  "warnings": [],
+  "errors": []
+}
