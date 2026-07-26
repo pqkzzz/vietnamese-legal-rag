@@ -320,6 +320,17 @@ def _validate_relationships(
         if node.parent_id:
             parent = nodes_by_id.get(node.parent_id)
             if parent is None:
+                if _is_virtual_article_parent(node):
+                    continue
+                if _parent_id_looks_cross_law(node):
+                    _warn(
+                        warnings,
+                        "CROSS_LAW_PARENT",
+                        "Node parent_id appears to belong to a different law_id.",
+                        node,
+                        related_chunk_id=node.parent_id,
+                        strict=strict,
+                    )
                 _warn(warnings, "ORPHAN_PARENT", "Node parent_id does not exist in the hierarchy.", node, strict=strict)
             elif parent.law_id != node.law_id:
                 _warn(
@@ -370,6 +381,24 @@ def _validate_relationships(
                         related_chunk_id=parent.chunk_id,
                         strict=strict,
                     )
+
+
+def _is_virtual_article_parent(node: ProvisionNode) -> bool:
+    """Return True for a clause pointing at its non-emitted article container."""
+
+    if node.level != ProvisionLevel.CLAUSE:
+        return False
+    if not node.article_id or not node.parent_id or not node.article_number:
+        return False
+    if node.parent_id != node.article_id:
+        return False
+    return node.article_id == f"{node.law_id}_D{node.article_number}"
+
+
+def _parent_id_looks_cross_law(node: ProvisionNode) -> bool:
+    if not node.parent_id or not node.law_id:
+        return False
+    return not node.parent_id.startswith(f"{node.law_id}_")
 
 
 def _assign_sibling_links(
@@ -530,3 +559,4 @@ def _dict_list(value: object) -> list[dict[str, Any]]:
     if not isinstance(value, list):
         return []
     return [deepcopy(item) for item in value if isinstance(item, dict)]
+
