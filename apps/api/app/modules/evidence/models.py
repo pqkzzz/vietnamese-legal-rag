@@ -87,6 +87,96 @@ class ProvisionNode:
         return payload
 
 
+class LegalReferenceType(str, Enum):
+    """Known legal reference source/target categories."""
+
+    INTERNAL = "internal"
+    EXTERNAL = "external"
+    RELATIVE = "relative"
+    UNKNOWN = "unknown"
+
+
+class ReferenceResolutionStatus(str, Enum):
+    """Resolution outcome for one direct legal reference."""
+
+    RESOLVED_EXACT = "resolved_exact"
+    RESOLVED_MULTIPLE = "resolved_multiple"
+    UNRESOLVED = "unresolved"
+    AMBIGUOUS = "ambiguous"
+    INVALID = "invalid"
+
+
+@dataclass(frozen=True)
+class LegalReference:
+    """A direct citation extracted from metadata or text."""
+
+    source_chunk_id: str
+    reference_type: LegalReferenceType
+
+    target_law_id: str | None
+    target_article_number: str | None
+    target_clause_number: str | None
+    target_point_number: str | None
+    target_unit_id: str | None
+
+    anchor_text: str | None
+    description_summary: str | None
+    raw_text: str | None
+
+    confidence: float
+    parser_source: str
+    metadata: dict[str, Any] = field(default_factory=dict)
+
+    def to_dict(self) -> dict[str, Any]:
+        payload = asdict(self)
+        payload["reference_type"] = self.reference_type.value
+        return payload
+
+
+@dataclass(frozen=True)
+class ResolvedLegalReference:
+    """A parsed reference plus the target nodes it resolves to."""
+
+    reference: LegalReference
+    status: ReferenceResolutionStatus
+    resolved_nodes: list[ProvisionNode]
+    exact_node: ProvisionNode | None
+    warnings: list[str] = field(default_factory=list)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "reference": self.reference.to_dict(),
+            "status": self.status.value,
+            "resolved_nodes": [node.to_dict() for node in self.resolved_nodes],
+            "exact_node": self.exact_node.to_dict() if self.exact_node else None,
+            "warnings": list(self.warnings),
+        }
+
+
+@dataclass(frozen=True)
+class ReferenceResolutionBatch:
+    """Direct references parsed and resolved for one source node."""
+
+    source_chunk_id: str
+    references: list[LegalReference]
+    resolved_references: list[ResolvedLegalReference]
+    resolved_count: int
+    unresolved_count: int
+    ambiguous_count: int
+    warnings: list[str] = field(default_factory=list)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "source_chunk_id": self.source_chunk_id,
+            "references": [reference.to_dict() for reference in self.references],
+            "resolved_references": [reference.to_dict() for reference in self.resolved_references],
+            "resolved_count": self.resolved_count,
+            "unresolved_count": self.unresolved_count,
+            "ambiguous_count": self.ambiguous_count,
+            "warnings": list(self.warnings),
+        }
+
+
 @dataclass(frozen=True)
 class HierarchyWarning:
     """A structured warning emitted while building a hierarchy index."""
