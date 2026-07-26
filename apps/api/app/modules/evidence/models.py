@@ -177,6 +177,49 @@ class ReferenceResolutionBatch:
         }
 
 
+class DependencyReason(str, Enum):
+    """Stable rule identifiers emitted by the legal dependency detector."""
+
+    POINT_REQUIRES_PARENT = "POINT_REQUIRES_PARENT"
+    POINT_HAS_CLAUSE_LEAD = "POINT_HAS_CLAUSE_LEAD"
+    SHORT_LIST_ITEM = "SHORT_LIST_ITEM"
+    PARENT_HAS_CHILDREN = "PARENT_HAS_CHILDREN"
+    LIST_INTRODUCTION = "LIST_INTRODUCTION"
+    DIRECT_LEGAL_REFERENCE = "DIRECT_LEGAL_REFERENCE"
+    RELATIVE_LEGAL_REFERENCE = "RELATIVE_LEGAL_REFERENCE"
+    EXCEPTION_MARKER = "EXCEPTION_MARKER"
+    FORWARD_DEPENDENCY = "FORWARD_DEPENDENCY"
+    BACKWARD_DEPENDENCY = "BACKWARD_DEPENDENCY"
+    PROCEDURAL_SEQUENCE = "PROCEDURAL_SEQUENCE"
+    INCOMPLETE_SENTENCE = "INCOMPLETE_SENTENCE"
+    SELF_CONTAINED = "SELF_CONTAINED"
+
+
+@dataclass(frozen=True)
+class DependencySignal:
+    """Query-independent context needs detected for one provision node."""
+
+    source_chunk_id: str
+
+    needs_parent: bool
+    needs_children: bool
+    needs_siblings: bool
+    needs_previous_neighbor: bool
+    needs_next_neighbor: bool
+    needs_references: bool
+
+    is_self_contained: bool
+    confidence: float
+
+    reasons: list[DependencyReason]
+    matched_markers: list[str]
+    metadata: dict[str, Any] = field(default_factory=dict)
+
+    def to_dict(self) -> dict[str, Any]:
+        payload = asdict(self)
+        payload["reasons"] = [reason.value for reason in self.reasons]
+        return payload
+
 @dataclass(frozen=True)
 class HierarchyWarning:
     """A structured warning emitted while building a hierarchy index."""
@@ -237,3 +280,4 @@ class ProvisionLookupResult:
             "found": self.found,
             "warnings": list(self.warnings),
         }
+
