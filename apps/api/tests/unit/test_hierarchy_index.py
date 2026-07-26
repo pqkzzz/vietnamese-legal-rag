@@ -274,3 +274,92 @@ def test_raw_metadata_clause_lead_and_cross_references_are_preserved(tmp_path: P
     assert node.clause_lead_clean == "1. Các trường hợp bao gồm:"
     assert node.cross_references[0]["target_unit_id"] == "LDD_2024_D122"
     assert node.metadata["payload"]["content_clean"] == "b) Chuyển đất nông nghiệp sang đất phi nông nghiệp;"
+
+def test_valid_virtual_article_parent_is_not_orphan(tmp_path: Path) -> None:
+    _write_jsonl(
+        tmp_path,
+        "LAW_chunks.jsonl",
+        [
+            _record(
+                "LAW_D10_K1",
+                law_id="LAW",
+                unit_type="clause",
+                article_number="10",
+                clause_number="1",
+                parent_id="LAW_D10",
+            ),
+        ],
+    )
+    index = LegalProvisionHierarchyIndex.from_jsonl_directory(tmp_path)
+    report = index.get_build_report()
+    assert report.orphan_nodes == 0
+    assert not any(warning.code == "ORPHAN_PARENT" and warning.chunk_id == "LAW_D10_K1" for warning in index.warnings)
+    assert index.get_parent("LAW_D10_K1") is None
+    assert [node.chunk_id for node in index.get_article_nodes("LAW", "10")] == ["LAW_D10_K1"]
+    assert [node.chunk_id for node in index.lookup("LAW", "10").nodes] == ["LAW_D10_K1"]
+
+
+def test_point_missing_parent_clause_is_true_orphan(tmp_path: Path) -> None:
+    _write_jsonl(
+        tmp_path,
+        "LAW_chunks.jsonl",
+        [
+            _record(
+                "LAW_D10_K999_DA",
+                law_id="LAW",
+                unit_type="point",
+                article_number="10",
+                clause_number="999",
+                point_number="a",
+                parent_id="LAW_D10_K999",
+            ),
+        ],
+    )
+    index = LegalProvisionHierarchyIndex.from_jsonl_directory(tmp_path)
+    report = index.get_build_report()
+    assert report.orphan_nodes == 1
+    assert any(warning.code == "ORPHAN_PARENT" and warning.chunk_id == "LAW_D10_K999_DA" for warning in index.warnings)
+    assert index.get_parent("LAW_D10_K999_DA") is None
+
+
+def test_clause_with_real_article_node_has_parent_without_warning(tmp_path: Path) -> None:
+    _write_jsonl(
+        tmp_path,
+        "LAW_chunks.jsonl",
+        [
+            _record("LAW_D10", law_id="LAW", unit_type="article", article_number="10", parent_id=None),
+            _record("LAW_D10_K1", law_id="LAW", unit_type="clause", article_number="10", clause_number="1", parent_id="LAW_D10"),
+        ],
+    )
+    index = LegalProvisionHierarchyIndex.from_jsonl_directory(tmp_path)
+    parent = index.get_parent("LAW_D10_K1")
+    assert parent is not None
+    assert parent.chunk_id == "LAW_D10"
+    assert not any(warning.code == "ORPHAN_PARENT" for warning in index.warnings)
+
+
+def test_clause_with_wrong_parent_id_is_not_virtual_article_parent(tmp_path: Path) -> None:
+    _write_jsonl(
+        tmp_path,
+        "LAW_chunks.jsonl",
+        [
+            _record("LAW_D10_K1", law_id="LAW", unit_type="clause", article_number="10", clause_number="1", parent_id="LAW_D999"),
+        ],
+    )
+    index = LegalProvisionHierarchyIndex.from_jsonl_directory(tmp_path)
+    assert index.get_build_report().orphan_nodes == 1
+    assert any(warning.code == "ORPHAN_PARENT" and warning.chunk_id == "LAW_D10_K1" for warning in index.warnings)
+
+
+def test_clause_cross_law_parent_still_warns(tmp_path: Path) -> None:
+    _write_jsonl(
+        tmp_path,
+        "LAW_chunks.jsonl",
+        [
+            _record("OTHER_D20", law_id="OTHER", unit_type="article", article_number="20", parent_id=None),
+            _record("LAW_D10_K1", law_id="LAW", unit_type="clause", article_number="10", clause_number="1", parent_id="OTHER_D20"),
+        ],
+    )
+    index = LegalProvisionHierarchyIndex.from_jsonl_directory(tmp_path)
+    assert any(warning.code == "CROSS_LAW_PARENT" and warning.chunk_id == "LAW_D10_K1" for warning in index.warnings)
+    assert not any(warning.code == "ORPHAN_PARENT" and warning.chunk_id == "LAW_D10_K1" for warning in index.warnings)
