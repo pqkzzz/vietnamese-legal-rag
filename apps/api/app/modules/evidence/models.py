@@ -1,0 +1,149 @@
+﻿"""Data models for legal provision hierarchy indexing."""
+
+from __future__ import annotations
+
+from dataclasses import asdict, dataclass, field
+from enum import Enum
+from typing import Any
+
+
+class ProvisionLevel(str, Enum):
+    """Supported legal provision hierarchy levels."""
+
+    ARTICLE = "article"
+    CLAUSE = "clause"
+    POINT = "point"
+    UNKNOWN = "unknown"
+
+
+@dataclass(frozen=True)
+class ProvisionLocation:
+    """A stable legal location key. Numeric identifiers stay strings."""
+
+    law_id: str
+    article_number: str | None
+    clause_number: str | None = None
+    point_number: str | None = None
+
+
+@dataclass
+class ProvisionNode:
+    """One retrieval chunk represented as a legal hierarchy node."""
+
+    qdrant_point_id: str | None
+    chunk_id: str
+    source_unit_id: str | None
+    unit_type: str
+    level: ProvisionLevel
+
+    law_id: str
+    law_name: str | None
+
+    chapter_number: str | None
+    chapter_title: str | None
+    section_number: str | None
+    section_title: str | None
+
+    article_number: str | None
+    article_title: str | None
+    clause_number: str | None
+    point_number: str | None
+
+    article_id: str | None
+    parent_id: str | None
+    child_ids: tuple[str, ...]
+    has_children: bool
+
+    content_raw: str | None
+    content_clean: str
+    clause_lead_raw: str | None
+    clause_lead_clean: str | None
+
+    cross_references: list[dict[str, Any]]
+    tags: list[str]
+
+    provision_status: str | None
+    is_retrievable: bool
+    document_status: str | None
+
+    order_index: int
+    previous_sibling_id: str | None
+    next_sibling_id: str | None
+
+    metadata: dict[str, Any]
+
+    @property
+    def location(self) -> ProvisionLocation:
+        return ProvisionLocation(
+            law_id=self.law_id,
+            article_number=self.article_number,
+            clause_number=self.clause_number,
+            point_number=self.point_number,
+        )
+
+    def to_dict(self) -> dict[str, Any]:
+        payload = asdict(self)
+        payload["level"] = self.level.value
+        return payload
+
+
+@dataclass(frozen=True)
+class HierarchyWarning:
+    """A structured warning emitted while building a hierarchy index."""
+
+    code: str
+    message: str
+    chunk_id: str | None = None
+    related_chunk_id: str | None = None
+    source_file: str | None = None
+    line_number: int | None = None
+    details: dict[str, Any] = field(default_factory=dict)
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+
+@dataclass(frozen=True)
+class HierarchyBuildReport:
+    """Summary of a hierarchy index build."""
+
+    source_files: list[str]
+    total_records: int
+    total_nodes: int
+    article_nodes: int
+    clause_nodes: int
+    point_nodes: int
+    retrievable_nodes: int
+    non_retrievable_nodes: int
+    orphan_nodes: int
+    duplicate_chunk_ids: int
+    duplicate_locations: int
+    warning_count: int
+    warnings: list[HierarchyWarning]
+
+    def to_dict(self) -> dict[str, Any]:
+        payload = asdict(self)
+        payload["warnings"] = [warning.to_dict() for warning in self.warnings]
+        return payload
+
+
+@dataclass(frozen=True)
+class ProvisionLookupResult:
+    """Structured result for article, clause, or point hierarchy lookup."""
+
+    location: ProvisionLocation
+    exact_node: ProvisionNode | None
+    nodes: list[ProvisionNode]
+    matched_level: ProvisionLevel | None
+    found: bool
+    warnings: list[str] = field(default_factory=list)
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "location": asdict(self.location),
+            "exact_node": self.exact_node.to_dict() if self.exact_node else None,
+            "nodes": [node.to_dict() for node in self.nodes],
+            "matched_level": self.matched_level.value if self.matched_level else None,
+            "found": self.found,
+            "warnings": list(self.warnings),
+        }
