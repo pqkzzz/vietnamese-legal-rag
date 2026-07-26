@@ -10,14 +10,19 @@ if str(API_ROOT) not in sys.path:
 from app.modules.evidence import LegalReferenceParser, LegalReferenceType, ProvisionLevel, ProvisionNode
 
 
-def _node(content: str = "", cross_references: list[dict[str, object]] | None = None) -> ProvisionNode:
+def _node(
+    content: str = "",
+    cross_references: list[dict[str, object]] | None = None,
+    *,
+    law_id: str = "LAW",
+) -> ProvisionNode:
     return ProvisionNode(
         qdrant_point_id=None,
         chunk_id="LAW_D121_K1",
         source_unit_id="LAW_D121_K1",
         unit_type="clause",
         level=ProvisionLevel.CLAUSE,
-        law_id="LAW",
+        law_id=law_id,
         law_name="Luật test",
         chapter_number=None,
         chapter_title=None,
@@ -27,7 +32,7 @@ def _node(content: str = "", cross_references: list[dict[str, object]] | None = 
         article_title="Điều nguồn",
         clause_number="1",
         point_number=None,
-        article_id="LAW_D121",
+        article_id=f"{law_id}_D121",
         parent_id="LAW_D121",
         child_ids=(),
         has_children=False,
@@ -163,6 +168,42 @@ def test_structured_and_regex_duplicates_keep_structured() -> None:
     assert refs[0].parser_source == "structured_metadata"
 
 
+def test_parse_node_keeps_supplemental_regex_references() -> None:
+    raw_reference = {"source": "structured"}
+    node = _node(
+        "Việc thực hiện tuân theo Điều 34 và Điều 35 của Luật này.",
+        [
+            {
+                "reference_type": "internal",
+                "target_law_id": "LAW_A",
+                "target_article_number": "34",
+                "target_clause_number": None,
+                "target_point_number": None,
+                "target_unit_id": "LAW_A_D34",
+                "anchor_text": "Điều 34",
+                "description_summary": None,
+                "raw_reference": raw_reference,
+            }
+        ],
+        law_id="LAW_A",
+    )
+
+    refs = LegalReferenceParser().parse_node(node)
+    targets = [
+        (ref.target_law_id, ref.target_article_number, ref.target_clause_number, ref.target_point_number)
+        for ref in refs
+    ]
+
+    assert len(refs) == 2
+    assert targets.count(("LAW_A", "34", None, None)) == 1
+    assert targets.count(("LAW_A", "35", None, None)) == 1
+
+    by_article = {ref.target_article_number: ref for ref in refs}
+    assert by_article["34"].parser_source == "structured_metadata"
+    assert by_article["34"].target_unit_id == "LAW_A_D34"
+    assert by_article["34"].metadata["raw_reference"] == raw_reference
+    assert by_article["35"].parser_source == "content_regex"
+
 def test_raw_metadata_is_preserved() -> None:
     raw = {"target_id": "LAW_D70", "anchor_text": "Điều 70"}
     ref = LegalReferenceParser().parse_structured_reference(
@@ -171,3 +212,4 @@ def test_raw_metadata_is_preserved() -> None:
     )
     assert ref is not None
     assert ref.metadata["raw_reference"] == raw
+
